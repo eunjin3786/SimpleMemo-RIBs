@@ -25,14 +25,14 @@ class AddMemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveMemoButton.rx.tap.withLatestFrom(addMemoTextField.rx.text.orEmpty)
-            .filter { $0 != "" }
-            .map { return Memo(title: $0) }
-            //.bind(to: viewModel.action.saveMemo)
-            .subscribe(onNext: { memo in
-                self.viewModel.action.saveMemo.onNext(memo)
-                self.delegate?.addMemoDidSave(memo: memo)
-            })
-            .disposed(by: bag)
+    saveMemoButton.rx.tap.withLatestFrom(addMemoTextField.rx.text.orEmpty)
+        .filter { $0 != "" }
+        .map { return Memo(title: $0) }
+        //.bind(to: viewModel.action.saveMemo)
+        .subscribe(onNext: { memo in
+            self.viewModel.action.saveMemo.onNext(memo)
+            self.delegate?.addMemoDidSave(memo: memo)
+        })
+        .disposed(by: bag)
     }
 }
