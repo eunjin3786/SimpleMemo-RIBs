@@ -29,7 +29,8 @@ class AddMemoViewController: UIViewController {
         .filter { $0 != "" }
         .map { return Memo(title: $0) }
         //.bind(to: viewModel.action.saveMemo)
-        .subscribe(onNext: { memo in
+        .subscribe(onNext: { [weak self] memo in
+            guard let `self` = self else { return }
             self.viewModel.action.saveMemo.onNext(memo)
             self.delegate?.addMemoDidSave(memo: memo)
         })
