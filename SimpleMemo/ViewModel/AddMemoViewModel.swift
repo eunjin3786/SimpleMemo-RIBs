@@ -25,7 +25,7 @@ struct AddMemoViewModel {
     
     init() {
         action.saveMemo.subscribe(onNext: { memo in
-            print("add \(memo)")
+            FirebaseManager.add(memo: memo)
         }).disposed(by: bag)
     }
 }
