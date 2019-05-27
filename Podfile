@@ -8,4 +8,6 @@ target 'SimpleMemo' do
   # Pods for SimpleMemo
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
 end

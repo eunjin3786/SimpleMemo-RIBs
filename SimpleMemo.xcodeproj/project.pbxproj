@@ -16,6 +16,7 @@
 		AC7E1F1C229A804F001180C3 /* MemosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F1B229A804E001180C3 /* MemosViewModel.swift */; };
 		AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F1D229A8082001180C3 /* AddMemoViewModel.swift */; };
 		AC7E1F21229A815C001180C3 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F20229A815C001180C3 /* Memo.swift */; };
+		AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		AC7E1F1B229A804E001180C3 /* MemosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosViewModel.swift; sourceTree = "<group>"; };
 		AC7E1F1D229A8082001180C3 /* AddMemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewModel.swift; sourceTree = "<group>"; };
 		AC7E1F20229A815C001180C3 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				AC7E1F09229A72A7001180C3 /* Assets.xcassets */,
 				AC7E1F0B229A72A7001180C3 /* LaunchScreen.storyboard */,
 				AC7E1F0E229A72A7001180C3 /* Info.plist */,
+				AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */,
 			);
 			path = SimpleMemo;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7E1F0D229A72A7001180C3 /* LaunchScreen.storyboard in Resources */,
+				AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */,
 				AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */,
 				AC7E1F08229A72A4001180C3 /* Main.storyboard in Resources */,
 			);
@@ -208,15 +212,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
