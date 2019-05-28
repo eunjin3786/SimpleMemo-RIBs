@@ -26,7 +26,7 @@ class FirebaseManager {
                 var memos: [Memo] = []
                 let memosDic = snapshot.value as? [String: Any] ?? [:]
                 for (key, _) in memosDic.sorted(by: {$0.key < $1.key}) {
-                    if let memoDic = memosDic[key] as? [String: Any], let memo = Memo(dic: memoDic) {
+                    if let memoDic = memosDic[key] as? [String: Any], let memo = Memo(dic: memoDic, ID: key) {
                         memos.append(memo)
                     }
                 }
@@ -34,5 +34,11 @@ class FirebaseManager {
             }
             return Disposables.create()
         }
+    }
+    
+    class func delete(key: String) {
+        let rootRef = Database.database().reference()
+        let memoRef = rootRef.child("memos").child(key)
+        memoRef.removeValue()
     }
 }
