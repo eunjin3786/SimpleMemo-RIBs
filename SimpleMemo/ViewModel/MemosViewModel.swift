@@ -33,5 +33,9 @@ struct MemosViewModel {
         action.changeMemo.subscribe(onNext: { memo in
             print("change \(memo)")
         }).disposed(by: bag)
+        
+        FirebaseManager.fetchAll()
+            .bind(to: state.memos)
+            .disposed(by: bag)
     }
 }
