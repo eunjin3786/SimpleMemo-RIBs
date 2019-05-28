@@ -16,14 +16,9 @@ class MemoCell: UITableViewCell {
 
 class MemosViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView! {
-        didSet {
-            tableView.rx.setDelegate(self).disposed(by: bag)
-            bindTableView()
-        }
-    }
+    @IBOutlet weak var tableView: UITableView!
     
-    private var viewModel = MemosViewModel()
+    private var viewModel: MemosViewModel!
     private let bag = DisposeBag()
     
     private func bindTableView() {
@@ -32,6 +27,12 @@ class MemosViewController: UIViewController {
                 cell.titleLabel.text = memo.title
             }
         }.disposed(by: bag)
+    }
+    
+    override func viewDidLoad() {
+        viewModel = MemosViewModel()
+        bindTableView()
+        tableView.rx.setDelegate(self).disposed(by: bag)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

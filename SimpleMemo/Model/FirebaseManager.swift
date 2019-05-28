@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import RxSwift
 
 class FirebaseManager {
     class func add(memo: Memo) {
@@ -16,5 +17,22 @@ class FirebaseManager {
         
         let memoRef = memosRef.childByAutoId()
         memoRef.setValue(memo.toDictionary())
+    }
+    
+    class func fetchAll() -> Observable<[Memo]> {
+        return Observable<[Memo]>.create { observer in
+            let rootRef = Database.database().reference()
+            rootRef.child("memos").observe(.value) { snapshot in
+                var memos: [Memo] = []
+                let memosDic = snapshot.value as? [String: Any] ?? [:]
+                for (key, _) in memosDic.sorted(by: {$0.key < $1.key}) {
+                    if let memoDic = memosDic[key] as? [String: Any], let memo = Memo(dic: memoDic) {
+                        memos.append(memo)
+                    }
+                }
+                observer.onNext(memos)
+            }
+            return Disposables.create()
+        }
     }
 }
