@@ -9,17 +9,20 @@
 import Foundation
 
 struct Memo {
+    let ID: String
     let title: String
-    
+
     init(title: String) {
+        self.ID = ""
         self.title = title
     }
     
-    init?(dic: [String: Any]) {
+    init?(dic: [String: Any], ID: String) {
         guard let title = dic["title"] as? String else {
             return nil
         }
         
+        self.ID = ID
         self.title = title
     }
 }
