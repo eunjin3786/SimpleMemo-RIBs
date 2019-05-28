@@ -25,7 +25,7 @@ class FirebaseManager {
             rootRef.child("memos").observe(.value) { snapshot in
                 var memos: [Memo] = []
                 let memosDic = snapshot.value as? [String: Any] ?? [:]
-                for (key, _) in memosDic {
+                for (key, _) in memosDic.sorted(by: {$0.key < $1.key}) {
                     if let memoDic = memosDic[key] as? [String: Any], let memo = Memo(dic: memoDic) {
                         memos.append(memo)
                     }
