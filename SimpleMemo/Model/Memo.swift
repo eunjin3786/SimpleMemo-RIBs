@@ -10,6 +10,18 @@ import Foundation
 
 struct Memo {
     let title: String
+    
+    init(title: String) {
+        self.title = title
+    }
+    
+    init?(dic: [String: Any]) {
+        guard let title = dic["title"] as? String else {
+            return nil
+        }
+        
+        self.title = title
+    }
 }
 
 extension Memo {
