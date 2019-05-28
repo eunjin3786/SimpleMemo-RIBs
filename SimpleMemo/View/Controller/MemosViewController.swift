@@ -34,22 +34,6 @@ class MemosViewController: UIViewController {
         bindTableView()
         tableView.rx.setDelegate(self).disposed(by: bag)
     }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AddMemo" {
-            if let vc = segue.destination as? AddMemoViewController {
-                vc.delegate = self
-            }
-        }
-    }
-}
-
-extension MemosViewController: AddMemoDelegate {
-    func addMemoDidSave(memo: Memo) {
-        var memos = viewModel.state.memos.value
-        memos.append(memo)
-        viewModel.state.memos.accept(memos)
-    }
 }
 
 extension MemosViewController: UITableViewDelegate {

@@ -10,16 +10,12 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-protocol AddMemoDelegate {
-    func addMemoDidSave(memo: Memo)
-}
 
 class AddMemoViewController: UIViewController {
     
     @IBOutlet weak var addMemoTextField: UITextField!
     @IBOutlet weak var saveMemoButton: UIButton!
     
-    var delegate: AddMemoDelegate?
     private var viewModel = AddMemoViewModel()
     private let bag = DisposeBag() 
 
@@ -28,12 +24,7 @@ class AddMemoViewController: UIViewController {
     saveMemoButton.rx.tap.withLatestFrom(addMemoTextField.rx.text.orEmpty)
         .filter { $0 != "" }
         .map { return Memo(title: $0) }
-        //.bind(to: viewModel.action.saveMemo)
-        .subscribe(onNext: { [weak self] memo in
-            guard let `self` = self else { return }
-            self.viewModel.action.saveMemo.onNext(memo)
-            self.delegate?.addMemoDidSave(memo: memo)
-        })
+        .bind(to: viewModel.action.saveMemo)
         .disposed(by: bag)
     }
 }
