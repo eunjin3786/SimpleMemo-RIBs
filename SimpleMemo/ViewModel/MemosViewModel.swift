@@ -27,6 +27,7 @@ struct MemosViewModel {
     
     init() {
         action.deleteMemo.subscribe(onNext: { memo in
+            FirebaseManager.delete(key: memo.ID)
             print("delete \(memo)")
         }).disposed(by: bag)
         
