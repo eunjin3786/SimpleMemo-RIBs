@@ -41,4 +41,10 @@ class FirebaseManager {
         let memoRef = rootRef.child("memos").child(key)
         memoRef.removeValue()
     }
+    
+    class func modify(key: String, to memo: Memo) {
+        let rootRef = Database.database().reference()
+        let memoRef = rootRef.child("memos").child(key)
+        memoRef.setValue(memo.toDictionary())
+    }
 }
