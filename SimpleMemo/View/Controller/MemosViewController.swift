@@ -47,7 +47,26 @@ extension MemosViewController: UITableViewDelegate {
         let action = UIContextualAction(style: .normal, title: "수정") { [weak self] (action, view, completion) in
             guard let `self` = self else { return }
             let memo = self.viewModel.state.memos.value[indexPath.row]
-            self.viewModel.action.changeMemo.onNext(memo)
+            let alertController = UIAlertController(title: "메모 수정", message: nil, preferredStyle: .alert)
+            alertController.addTextField(configurationHandler: { textField in
+                textField.text = memo.title
+            })
+            let cancleAction = UIAlertAction(title: "취소", style: .cancel, handler: { [weak self] _ in
+                self?.tableView.setEditing(false, animated: true)
+            })
+            let saveAction = UIAlertAction(title: "확인", style: .default, handler: { [weak self] _ in
+                if let textField = alertController.textFields?.first, let text = textField.text {
+                    if text == "" {
+                        self?.viewModel.action.deleteMemo.onNext(memo)
+                    } else {
+                        self?.viewModel.action.changeMemo.onNext(Memo(title: text))
+                    }
+                }
+                self?.tableView.setEditing(false, animated: true)
+            })
+            alertController.addAction(cancleAction)
+            alertController.addAction(saveAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         action.backgroundColor = .orange
         return action
