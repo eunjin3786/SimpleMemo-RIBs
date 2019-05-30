@@ -59,7 +59,9 @@ extension MemosViewController: UITableViewDelegate {
                     if text == "" {
                         self?.viewModel.action.deleteMemo.onNext(memo)
                     } else {
-                        self?.viewModel.action.changeMemo.onNext(Memo(title: text))
+                        var newMemo = memo
+                        newMemo.title = text
+                        self?.viewModel.action.changeMemo.onNext(newMemo)
                     }
                 }
                 self?.tableView.setEditing(false, animated: true)
