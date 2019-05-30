@@ -28,13 +28,12 @@ struct MemosViewModel {
     init() {
         action.deleteMemo.subscribe(onNext: { memo in
             FirebaseManager.delete(key: memo.ID)
-            print("delete \(memo)")
         }).disposed(by: bag)
         
         action.changeMemo.subscribe(onNext: { memo in
-            print("change \(memo)")
+            FirebaseManager.change(key: memo.ID, to: memo)
         }).disposed(by: bag)
-        
+
         FirebaseManager.fetchAll()
             .bind(to: state.memos)
             .disposed(by: bag)

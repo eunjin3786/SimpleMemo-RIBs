@@ -10,7 +10,7 @@ import Foundation
 
 struct Memo {
     let ID: String
-    let title: String
+    var title: String
 
     init(title: String) {
         self.ID = ""
