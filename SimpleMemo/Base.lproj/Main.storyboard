@@ -203,6 +203,11 @@
                         <viewLayoutGuide key="safeArea" id="3um-25-NlQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Simple Memo" id="QRp-Lh-WDo"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="WoI-YQ-4Yh" id="Qgg-zT-FTG"/>
+                        <outlet property="loginButton" destination="7QI-7n-61q" id="HHI-7o-n6C"/>
+                        <outlet property="passwordTextField" destination="RgE-XU-p2i" id="mzh-vb-971"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4g5-nq-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,6 +321,11 @@
                         <viewLayoutGuide key="safeArea" id="nBg-Sz-2Vw"/>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="F3l-4X-fdb"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="RiE-PS-ohT" id="IAP-bz-j7F"/>
+                        <outlet property="passwordTextField" destination="pJg-1r-ChF" id="YCm-Ya-eN9"/>
+                        <outlet property="signupButton" destination="3zQ-a7-hcy" id="0MP-cq-6Ih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epl-kX-TcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

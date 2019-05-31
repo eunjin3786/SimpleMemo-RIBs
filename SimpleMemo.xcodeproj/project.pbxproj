@@ -18,6 +18,8 @@
 		AC7E1F21229A815C001180C3 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F20229A815C001180C3 /* Memo.swift */; };
 		AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */; };
 		ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */; };
+		ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */; };
+		ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		AC7E1F20229A815C001180C3 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			children = (
 				AC7E1F14229A73BF001180C3 /* MemosViewController.swift */,
 				AC7E1F16229A73CE001180C3 /* AddMemoViewController.swift */,
+				ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */,
+				ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 				AC7E1F17229A73CE001180C3 /* AddMemoViewController.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
+				ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
+				ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */,
 				AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
 			);
