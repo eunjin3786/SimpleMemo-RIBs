@@ -22,6 +22,7 @@
 		ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */; };
 		ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */; };
 		ACC0ACD922A0F78A0017BBB8 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD822A0F78A0017BBB8 /* LoginManager.swift */; };
+		ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ACC0ACD822A0F78A0017BBB8 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				AC7E1F1B229A804E001180C3 /* MemosViewModel.swift */,
 				AC7E1F1D229A8082001180C3 /* AddMemoViewModel.swift */,
 				ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */,
+				ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
 				ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
+				ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */,
 				ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */,
 				ACC0ACD922A0F78A0017BBB8 /* LoginManager.swift in Sources */,
 				AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */,
