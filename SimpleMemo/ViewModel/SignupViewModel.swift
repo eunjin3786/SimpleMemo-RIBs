@@ -24,8 +24,14 @@ struct SignupViewModel {
     
     init() {
         action.signup.subscribe(onNext: { email, password in
-            print(email)
-            print(password)
+            FirebaseManager.signup(email: email, password: password, completion: { result in
+                switch result {
+                case .success:
+                    Navigator.presentAlert(with: "회원가입 완료")
+                case .failure(let error):
+                    Navigator.presentAlert(with: error.localizedDescription)
+                }
+            })
         }).disposed(by: bag)
     }
 }
