@@ -48,3 +48,16 @@ class FirebaseManager {
         memoRef.setValue(memo.toDictionary())
     }
 }
+
+extension FirebaseManager {
+
+    class func signup(email: String, password: String, completion: @escaping (Result<AuthDataResult,Error>) -> Void) {
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if let result = result {
+                 completion(.success(result))
+            } else if let error = error {
+                completion(.failure(error))
+            }
+        }
+    }
+}
