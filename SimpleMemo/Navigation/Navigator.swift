@@ -16,4 +16,8 @@ class Navigator {
         alertController.addAction(okAction)
         UIApplication.topViewController()?.present(alertController, animated: true, completion: nil)
     }
+    
+    class func present(to viewController: UIViewController, animated: Bool = false, completion: (() -> Void)? = nil) {
+        UIApplication.topViewController()?.present(viewController, animated: animated, completion: completion)
+    }
 }
