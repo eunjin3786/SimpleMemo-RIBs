@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */; };
 		AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F02229A72A4001180C3 /* AppDelegate.swift */; };
 		AC7E1F08229A72A4001180C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F06229A72A4001180C3 /* Main.storyboard */; };
 		AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F09229A72A7001180C3 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.release.xcconfig"; sourceTree = "<group>"; };
 		5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7E1F02229A72A4001180C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7E1F07229A72A4001180C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC3413B622AEA1850090487B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */,
+				ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AC7E1EF6229A72A3001180C3 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +115,7 @@
 		AC7E1F01229A72A4001180C3 /* SimpleMemo */ = {
 			isa = PBXGroup;
 			children = (
+				AC3413B622AEA1850090487B /* Extension */,
 				ACC0ACDD22A138E90017BBB8 /* Navigation */,
 				AC7E1F1A229A8012001180C3 /* ViewModel */,
 				AC7E1F19229A800C001180C3 /* View */,
@@ -162,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				ACC0ACE022A1406B0017BBB8 /* Navigator.swift */,
-				ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 			files = (
 				AC7E1F1C229A804F001180C3 /* MemosViewModel.swift in Sources */,
 				AC7E1F17229A73CE001180C3 /* AddMemoViewController.swift in Sources */,
+				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
