@@ -20,4 +20,8 @@ class Navigator {
     class func present(to viewController: UIViewController, animated: Bool = false, completion: (() -> Void)? = nil) {
         UIApplication.topViewController()?.present(viewController, animated: animated, completion: completion)
     }
+    
+    class func push() {
+        
+    }
 }
