@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */; };
 		AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F02229A72A4001180C3 /* AppDelegate.swift */; };
 		AC7E1F08229A72A4001180C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F06229A72A4001180C3 /* Main.storyboard */; };
 		AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F09229A72A7001180C3 /* Assets.xcassets */; };
@@ -18,6 +19,13 @@
 		AC7E1F21229A815C001180C3 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F20229A815C001180C3 /* Memo.swift */; };
 		AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */; };
 		ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */; };
+		ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */; };
+		ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */; };
+		ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */; };
+		ACC0ACD922A0F78A0017BBB8 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD822A0F78A0017BBB8 /* LoginManager.swift */; };
+		ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */; };
+		ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */; };
+		ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACE022A1406B0017BBB8 /* Navigator.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +33,7 @@
 		15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.release.xcconfig"; sourceTree = "<group>"; };
 		5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7E1F02229A72A4001180C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7E1F07229A72A4001180C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +47,13 @@
 		AC7E1F20229A815C001180C3 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ACC0ACD822A0F78A0017BBB8 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SimpleMemo.swift"; sourceTree = "<group>"; };
+		ACC0ACE022A1406B0017BBB8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC3413B622AEA1850090487B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */,
+				ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AC7E1EF6229A72A3001180C3 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +115,8 @@
 		AC7E1F01229A72A4001180C3 /* SimpleMemo */ = {
 			isa = PBXGroup;
 			children = (
+				AC3413B622AEA1850090487B /* Extension */,
+				ACC0ACDD22A138E90017BBB8 /* Navigation */,
 				AC7E1F1A229A8012001180C3 /* ViewModel */,
 				AC7E1F19229A800C001180C3 /* View */,
 				AC7E1F18229A8002001180C3 /* Model */,
@@ -108,6 +135,7 @@
 			children = (
 				AC7E1F20229A815C001180C3 /* Memo.swift */,
 				ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */,
+				ACC0ACD822A0F78A0017BBB8 /* LoginManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +153,8 @@
 			children = (
 				AC7E1F1B229A804E001180C3 /* MemosViewModel.swift */,
 				AC7E1F1D229A8082001180C3 /* AddMemoViewModel.swift */,
+				ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */,
+				ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -134,8 +164,18 @@
 			children = (
 				AC7E1F14229A73BF001180C3 /* MemosViewController.swift */,
 				AC7E1F16229A73CE001180C3 /* AddMemoViewController.swift */,
+				ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */,
+				ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACC0ACDD22A138E90017BBB8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0ACE022A1406B0017BBB8 /* Navigator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +255,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -224,6 +265,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -263,10 +305,18 @@
 			files = (
 				AC7E1F1C229A804F001180C3 /* MemosViewModel.swift in Sources */,
 				AC7E1F17229A73CE001180C3 /* AddMemoViewController.swift in Sources */,
+				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
+				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
+				ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
+				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
+				ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */,
+				ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */,
+				ACC0ACD922A0F78A0017BBB8 /* LoginManager.swift in Sources */,
 				AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */,
+				ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
