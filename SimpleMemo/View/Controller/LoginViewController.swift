@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         viewModel = LoginViewModel()
         
         Observable.combineLatest(emailTextField.rx.text.orEmpty, passwordTextField.rx.text.orEmpty) { email, password -> Bool in
-            return LoginManager.isValidEmail(email) && LoginManager.isValidPassword(password)
+            return LoginTextInputManager.isValidEmail(email) && LoginTextInputManager.isValidPassword(password)
             }
             .subscribe(onNext: { [weak self] isValid in
                 isValid ? (self?.loginButton.isEnabled = true) : (self?.loginButton.isEnabled = false)

@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class Navigator {
-    class func presentAlert(with message: String) {
+    class func presentAlert(with message: String, action: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: action)
         alertController.addAction(okAction)
         UIApplication.topViewController()?.present(alertController, animated: true, completion: nil)
     }
@@ -23,5 +23,12 @@ class Navigator {
     
     class func push() {
         
+    }
+    
+    class func changeRootViewController(to viewController: UIViewController) {
+        let appDelegate = UIApplication.shared.delegate
+        if let window = appDelegate?.window {
+            window?.rootViewController = viewController
+        }
     }
 }

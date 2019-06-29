@@ -2,18 +2,22 @@
 //  LoginManager.swift
 //  SimpleMemo
 //
-//  Created by eunjin Jo on 31/05/2019.
+//  Created by kakao on 29/06/2019.
 //  Copyright © 2019 eunjin. All rights reserved.
 //
 
 import Foundation
+import UIKit
 
 class LoginManager {
-    class func isValidEmail(_ email: String) -> Bool {
-        return email.count >= 5
+    class func moveToMemos() {
+        let memosNavController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemosNavController")
+        Navigator.changeRootViewController(to: memosNavController)
     }
     
-    class func isValidPassword(_ password: String) -> Bool {
-        return password.count >= 5
+    class func moveToLogin(){
+        let loginNavController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginNavController")
+        Navigator.changeRootViewController(to: loginNavController)
     }
+        
 }

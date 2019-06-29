@@ -17,6 +17,9 @@ class MemoCell: UITableViewCell {
 class MemosViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        LoginManager.moveToLogin()
+    }
     
     private var viewModel: MemosViewModel!
     private let bag = DisposeBag()

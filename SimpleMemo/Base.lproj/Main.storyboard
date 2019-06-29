@@ -68,7 +68,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Memos" id="xTt-3g-DeN"/>
+                    <navigationItem key="navigationItem" title="Memos" id="xTt-3g-DeN">
+                        <barButtonItem key="rightBarButtonItem" title="로그아웃" id="twq-7S-ajp">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="BYZ-38-t0r" id="f1s-m5-j8x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="KU4-Ea-XA2" id="8ec-u6-xrN"/>
                     </connections>
@@ -241,7 +247,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WBJ-wl-PiA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q3L-wx-sot" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q3L-wx-sot" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="510-7h-Bcp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
