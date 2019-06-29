@@ -12,6 +12,10 @@ import RxSwift
 
 class FirebaseManager {
     
+    class var isLogin: Bool {
+        return Auth.auth().currentUser != nil ? true : false
+    }
+    
     class var user: String {
         return Auth.auth().currentUser?.email?.removeSpecialCharacters() ?? ""
     }
