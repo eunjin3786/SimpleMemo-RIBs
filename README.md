@@ -25,8 +25,8 @@ Firebase 예제 프로젝트
 
 ## 2. Firebase Auth 
 
-- 로그인
 - 회원가입 
+- 로그인
   
   
 
