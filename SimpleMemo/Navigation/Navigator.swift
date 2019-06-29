@@ -24,4 +24,11 @@ class Navigator {
     class func push() {
         
     }
+    
+    class func changeRootViewController(to viewController: UIViewController) {
+        let appDelegate = UIApplication.shared.delegate
+        if let window = appDelegate?.window {
+            window?.rootViewController = viewController
+        }
+    }
 }

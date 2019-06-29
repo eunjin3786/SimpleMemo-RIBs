@@ -27,12 +27,13 @@ struct LoginViewModel {
             FirebaseManager.login(email: email, password: password, completion: { result in
                 switch result {
                 case .success:
-                    let navController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemosNavController")
-                    Navigator.present(to: navController)
+                    let memosNavController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemosNavController")
+                    Navigator.changeRootViewController(to: memosNavController)
                 case .failure(let failure):
                     Navigator.presentAlert(with: failure.localizedDescription)
                 }
             })
         }).disposed(by: bag)
+        
     }
 }
