@@ -27,7 +27,9 @@ struct SignupViewModel {
             FirebaseManager.signup(email: email, password: password, completion: { result in
                 switch result {
                 case .success:
-                    Navigator.presentAlert(with: "회원가입 완료")
+                    Navigator.presentAlert(with: "회원가입 완료", action: { _ in
+                        LoginManager.moveToMemos()
+                    })
                 case .failure(let error):
                     Navigator.presentAlert(with: error.localizedDescription)
                 }
