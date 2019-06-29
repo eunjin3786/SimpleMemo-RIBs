@@ -22,10 +22,10 @@
 		ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */; };
 		ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */; };
 		ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */; };
-		ACC0ACD922A0F78A0017BBB8 /* SignupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD822A0F78A0017BBB8 /* SignupManager.swift */; };
 		ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */; };
 		ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */; };
 		ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACE022A1406B0017BBB8 /* Navigator.swift */; };
+		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,10 +50,10 @@
 		ACC0ACD222A073A60017BBB8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ACC0ACD422A073B70017BBB8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ACC0ACD622A0F4D40017BBB8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		ACC0ACD822A0F78A0017BBB8 /* SignupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupManager.swift; sourceTree = "<group>"; };
 		ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SimpleMemo.swift"; sourceTree = "<group>"; };
 		ACC0ACE022A1406B0017BBB8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 			children = (
 				AC7E1F20229A815C001180C3 /* Memo.swift */,
 				ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */,
-				ACC0ACD822A0F78A0017BBB8 /* SignupManager.swift */,
+				C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7E1F1C229A804F001180C3 /* MemosViewModel.swift in Sources */,
+				C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */,
 				AC7E1F17229A73CE001180C3 /* AddMemoViewController.swift in Sources */,
 				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
@@ -314,7 +315,6 @@
 				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
 				ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */,
 				ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */,
-				ACC0ACD922A0F78A0017BBB8 /* SignupManager.swift in Sources */,
 				AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */,
 				ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
