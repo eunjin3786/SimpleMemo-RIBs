@@ -27,8 +27,7 @@ struct LoginViewModel {
             FirebaseManager.login(email: email, password: password, completion: { result in
                 switch result {
                 case .success:
-                    let memosNavController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemosNavController")
-                    Navigator.changeRootViewController(to: memosNavController)
+                    LoginManager.moveToMemos()
                 case .failure(let failure):
                     Navigator.presentAlert(with: failure.localizedDescription)
                 }

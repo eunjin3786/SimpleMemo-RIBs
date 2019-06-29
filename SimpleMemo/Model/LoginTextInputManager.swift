@@ -1,5 +1,5 @@
 //
-//  LoginManager.swift
+//  LoginTextInputManager.swift
 //  SimpleMemo
 //
 //  Created by kakao on 29/06/2019.
