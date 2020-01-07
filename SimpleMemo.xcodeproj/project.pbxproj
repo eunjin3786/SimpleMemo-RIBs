@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */; };
 		AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */; };
+		AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */; };
+		AC3F04E123C4F455005ED8E6 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04DD23C4F455005ED8E6 /* RootRouter.swift */; };
+		AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04DE23C4F455005ED8E6 /* RootViewController.swift */; };
+		AC3F04E323C4F455005ED8E6 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04DF23C4F455005ED8E6 /* RootBuilder.swift */; };
+		AC3F04E423C4F455005ED8E6 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04E023C4F455005ED8E6 /* RootInteractor.swift */; };
 		AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F02229A72A4001180C3 /* AppDelegate.swift */; };
 		AC7E1F08229A72A4001180C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F06229A72A4001180C3 /* Main.storyboard */; };
 		AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F09229A72A7001180C3 /* Assets.xcassets */; };
@@ -37,6 +42,11 @@
 		5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+SimpleMemo.swift"; sourceTree = "<group>"; };
+		AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		AC3F04DD23C4F455005ED8E6 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		AC3F04DE23C4F455005ED8E6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		AC3F04DF23C4F455005ED8E6 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		AC3F04E023C4F455005ED8E6 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7E1F02229A72A4001180C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7E1F07229A72A4001180C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +119,34 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		AC3F04D023C4ED32005ED8E6 /* RIBs */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F04D123C4ED50005ED8E6 /* Root */,
+			);
+			path = RIBs;
+			sourceTree = "<group>";
+		};
+		AC3F04D123C4ED50005ED8E6 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F04DD23C4F455005ED8E6 /* RootRouter.swift */,
+				AC3F04DE23C4F455005ED8E6 /* RootViewController.swift */,
+				AC3F04DF23C4F455005ED8E6 /* RootBuilder.swift */,
+				AC3F04E023C4F455005ED8E6 /* RootInteractor.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		AC3F04D223C4ED7C005ED8E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E1F02229A72A4001180C3 /* AppDelegate.swift */,
+				AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		AC7E1EF6229A72A3001180C3 = {
 			isa = PBXGroup;
 			children = (
@@ -130,13 +168,14 @@
 		AC7E1F01229A72A4001180C3 /* SimpleMemo */ = {
 			isa = PBXGroup;
 			children = (
+				AC3F04D223C4ED7C005ED8E6 /* App */,
+				AC3F04D023C4ED32005ED8E6 /* RIBs */,
 				AC3413B622AEA1850090487B /* Extension */,
 				ACC0ACDD22A138E90017BBB8 /* Navigation */,
 				AC7E1F1A229A8012001180C3 /* ViewModel */,
 				AC7E1F19229A800C001180C3 /* View */,
 				AC7E1F18229A8002001180C3 /* Model */,
 				AC3F04CC23C4C481005ED8E6 /* Utils */,
-				AC7E1F02229A72A4001180C3 /* AppDelegate.swift */,
 				AC7E1F06229A72A4001180C3 /* Main.storyboard */,
 				AC7E1F09229A72A7001180C3 /* Assets.xcassets */,
 				AC7E1F0B229A72A7001180C3 /* LaunchScreen.storyboard */,
@@ -306,12 +345,17 @@
 			files = (
 				AC7E1F1C229A804F001180C3 /* MemosViewModel.swift in Sources */,
 				C2FCA05A22C7545C0094894D /* LoginManager.swift in Sources */,
+				AC3F04E423C4F455005ED8E6 /* RootInteractor.swift in Sources */,
+				AC3F04E123C4F455005ED8E6 /* RootRouter.swift in Sources */,
 				C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */,
 				AC7E1F17229A73CE001180C3 /* AddMemoViewController.swift in Sources */,
 				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
+				AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
+				AC3F04E323C4F455005ED8E6 /* RootBuilder.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
+				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
 				ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
 				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
