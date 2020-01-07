@@ -40,7 +40,6 @@ class FirebaseManager {
                     }
                 }
                 observer.onNext(memos)
-                observer.onCompleted()
             }
             return Disposables.create()
         }
