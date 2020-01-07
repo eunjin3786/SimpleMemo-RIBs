@@ -15,9 +15,9 @@ class LoginManager {
         Navigator.changeRootViewController(to: memosNavController)
     }
     
-    class func moveToLogin(){
+    class func moveToLogin() {
+        FirebaseManager.logout()
         let loginNavController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginNavController")
         Navigator.changeRootViewController(to: loginNavController)
     }
-        
 }
