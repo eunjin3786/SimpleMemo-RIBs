@@ -40,6 +40,7 @@ class FirebaseManager {
                     }
                 }
                 observer.onNext(memos)
+                observer.onCompleted()
             }
             return Disposables.create()
         }
@@ -78,5 +79,9 @@ extension FirebaseManager {
                 completion(.failure(error))
             }
         }
+    }
+    
+    class func logout() {
+        try! Auth.auth().signOut()
     }
 }

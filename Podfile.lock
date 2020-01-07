@@ -80,7 +80,7 @@ DEPENDENCIES:
   - RxSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -116,4 +116,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b20f4cc26be1fe2f75dd4cc2d362b61cb9701359
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.8.4

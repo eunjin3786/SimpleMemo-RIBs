@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */; };
+		AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */; };
 		AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F02229A72A4001180C3 /* AppDelegate.swift */; };
 		AC7E1F08229A72A4001180C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F06229A72A4001180C3 /* Main.storyboard */; };
 		AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F09229A72A7001180C3 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.release.xcconfig"; sourceTree = "<group>"; };
 		5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleMemo.swift"; sourceTree = "<group>"; };
+		AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7E1F02229A72A4001180C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7E1F07229A72A4001180C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,8 +94,19 @@
 			children = (
 				AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */,
 				ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */,
+				AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AC3F04CC23C4C481005ED8E6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */,
+				C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */,
+				C2FCA05922C7545C0094894D /* LoginManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		AC7E1EF6229A72A3001180C3 = {
@@ -122,6 +135,7 @@
 				AC7E1F1A229A8012001180C3 /* ViewModel */,
 				AC7E1F19229A800C001180C3 /* View */,
 				AC7E1F18229A8002001180C3 /* Model */,
+				AC3F04CC23C4C481005ED8E6 /* Utils */,
 				AC7E1F02229A72A4001180C3 /* AppDelegate.swift */,
 				AC7E1F06229A72A4001180C3 /* Main.storyboard */,
 				AC7E1F09229A72A7001180C3 /* Assets.xcassets */,
@@ -136,9 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				AC7E1F20229A815C001180C3 /* Memo.swift */,
-				ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */,
-				C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */,
-				C2FCA05922C7545C0094894D /* LoginManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,25 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -321,6 +319,7 @@
 				ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */,
 				AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */,
 				ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */,
+				AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
