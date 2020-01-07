@@ -66,6 +66,8 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - RIBs (0.9.1):
+    - RxSwift (~> 4.0)
   - RxAtomic (4.4.1)
   - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
@@ -76,6 +78,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - RIBs (~> 0.9)
   - RxCocoa
   - RxSwift
 
@@ -96,6 +99,8 @@ SPEC REPOS:
     - RxAtomic
     - RxCocoa
     - RxSwift
+  trunk:
+    - RIBs
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -110,10 +115,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
 
-PODFILE CHECKSUM: b20f4cc26be1fe2f75dd4cc2d362b61cb9701359
+PODFILE CHECKSUM: b29bbf6f55f3ec5dffd746354277a64b98b0a4b8
 
 COCOAPODS: 1.8.4
