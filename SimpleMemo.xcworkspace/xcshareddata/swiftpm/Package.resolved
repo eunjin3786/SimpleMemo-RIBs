@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JinnyAppKit",
+        "repositoryURL": "https://github.com/eunjin3786/JinnyAppKit",
+        "state": {
+          "branch": null,
+          "revision": "3cd0bdddcb156608314cc214c716bedff8db5709",
+          "version": "0.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

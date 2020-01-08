@@ -3,4 +3,22 @@
    uuid = "E8B4A293-F9B6-47DD-8AC2-C3163A530A5E"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "701C2A01-1092-4754-B1FB-C7B7FF757C2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/SimpleMemo-dzlbqwwxfvlxjlhkkaddggkgxfjw/SourcePackages/checkouts/JinnyAppKit/Sources/JinnyAppKit/Extensions/NibCreatable/UIViewController+NibCreatable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "instanceFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

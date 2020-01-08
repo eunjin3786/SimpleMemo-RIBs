@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,12 @@
 		ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */; };
 		ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */; };
 		ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACE022A1406B0017BBB8 /* Navigator.swift */; };
+		C221BA2E23C564320054297C /* LogOutRIBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221BA2A23C564320054297C /* LogOutRIBRouter.swift */; };
+		C221BA2F23C564320054297C /* LogOutRIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221BA2B23C564320054297C /* LogOutRIBViewController.swift */; };
+		C221BA3023C564320054297C /* LogOutRIBBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221BA2C23C564320054297C /* LogOutRIBBuilder.swift */; };
+		C221BA3123C564320054297C /* LogOutRIBInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221BA2D23C564320054297C /* LogOutRIBInteractor.swift */; };
+		C221BA3D23C56AF40054297C /* LogOutRIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C221BA3C23C56AF40054297C /* LogOutRIBViewController.xib */; };
+		C221BA4023C5B6F20054297C /* JinnyAppKit in Frameworks */ = {isa = PBXBuildFile; productRef = C221BA3F23C5B6F20054297C /* JinnyAppKit */; };
 		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
 		C2FCA05A22C7545C0094894D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA05922C7545C0094894D /* LoginManager.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
@@ -66,6 +72,11 @@
 		ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SimpleMemo.swift"; sourceTree = "<group>"; };
 		ACC0ACE022A1406B0017BBB8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		C221BA2A23C564320054297C /* LogOutRIBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutRIBRouter.swift; sourceTree = "<group>"; };
+		C221BA2B23C564320054297C /* LogOutRIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutRIBViewController.swift; sourceTree = "<group>"; };
+		C221BA2C23C564320054297C /* LogOutRIBBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutRIBBuilder.swift; sourceTree = "<group>"; };
+		C221BA2D23C564320054297C /* LogOutRIBInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutRIBInteractor.swift; sourceTree = "<group>"; };
+		C221BA3C23C56AF40054297C /* LogOutRIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutRIBViewController.xib; sourceTree = "<group>"; };
 		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
 		C2FCA05922C7545C0094894D /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C221BA4023C5B6F20054297C /* JinnyAppKit in Frameworks */,
 				FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AC3F04D123C4ED50005ED8E6 /* Root */,
+				C221BA2923C564030054297C /* LogOutRIB */,
 			);
 			path = RIBs;
 			sourceTree = "<group>";
@@ -231,6 +244,18 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		C221BA2923C564030054297C /* LogOutRIB */ = {
+			isa = PBXGroup;
+			children = (
+				C221BA2A23C564320054297C /* LogOutRIBRouter.swift */,
+				C221BA2C23C564320054297C /* LogOutRIBBuilder.swift */,
+				C221BA2D23C564320054297C /* LogOutRIBInteractor.swift */,
+				C221BA2B23C564320054297C /* LogOutRIBViewController.swift */,
+				C221BA3C23C56AF40054297C /* LogOutRIBViewController.xib */,
+			);
+			path = LogOutRIB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +274,9 @@
 			dependencies = (
 			);
 			name = SimpleMemo;
+			packageProductDependencies = (
+				C221BA3F23C5B6F20054297C /* JinnyAppKit */,
+			);
 			productName = SimpleMemo;
 			productReference = AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */;
 			productType = "com.apple.product-type.application";
@@ -277,6 +305,9 @@
 				Base,
 			);
 			mainGroup = AC7E1EF6229A72A3001180C3;
+			packageReferences = (
+				C221BA3E23C5B6F20054297C /* XCRemoteSwiftPackageReference "JinnyAppKit" */,
+			);
 			productRefGroup = AC7E1F00229A72A4001180C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +325,7 @@
 				AC7E1F0D229A72A7001180C3 /* LaunchScreen.storyboard in Resources */,
 				AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */,
 				AC7E1F0A229A72A7001180C3 /* Assets.xcassets in Resources */,
+				C221BA3D23C56AF40054297C /* LogOutRIBViewController.xib in Resources */,
 				AC7E1F08229A72A4001180C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,16 +384,20 @@
 				AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */,
 				AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */,
 				ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */,
+				C221BA2E23C564320054297C /* LogOutRIBRouter.swift in Sources */,
 				AC3F04E323C4F455005ED8E6 /* RootBuilder.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
 				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
+				C221BA2F23C564320054297C /* LogOutRIBViewController.swift in Sources */,
 				ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
 				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
 				ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */,
+				C221BA3023C564320054297C /* LogOutRIBBuilder.swift in Sources */,
 				ACC0ACD522A073B70017BBB8 /* SignUpViewController.swift in Sources */,
 				AC7E1F1E229A8082001180C3 /* AddMemoViewModel.swift in Sources */,
+				C221BA3123C564320054297C /* LogOutRIBInteractor.swift in Sources */,
 				ACC0ACD722A0F4D40017BBB8 /* LoginViewModel.swift in Sources */,
 				AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */,
 				AC7E1F03229A72A4001180C3 /* AppDelegate.swift in Sources */,
@@ -566,6 +602,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C221BA3E23C5B6F20054297C /* XCRemoteSwiftPackageReference "JinnyAppKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eunjin3786/JinnyAppKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C221BA3F23C5B6F20054297C /* JinnyAppKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C221BA3E23C5B6F20054297C /* XCRemoteSwiftPackageReference "JinnyAppKit" */;
+			productName = JinnyAppKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC7E1EF7229A72A3001180C3 /* Project object */;
 }
