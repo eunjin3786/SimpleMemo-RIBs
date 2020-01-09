@@ -13,7 +13,7 @@ protocol RootDependency: Dependency {
     // created by this RIB.
 }
 
-final class RootComponent: Component<RootDependency>, LogOutRIBDependency {
+final class RootComponent: Component<RootDependency>, LoggedOutDependency {
 
     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
 }
@@ -34,9 +34,9 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
         let component = RootComponent(dependency: dependency)
         let viewController = RootViewController()
         let interactor = RootInteractor(presenter: viewController)
-        let logOutRIBBuilder = LogOutRIBBuilder(dependency: component)
+        let loggedOutBuilder = LoggedOutBuilder(dependency: component)
         return RootRouter(interactor: interactor,
                           viewController: viewController,
-                          logOutRIBBuilder: logOutRIBBuilder)
+                          loggedOutBuilder: loggedOutBuilder)
     }
 }
