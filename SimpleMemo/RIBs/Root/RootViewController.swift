@@ -17,11 +17,17 @@ protocol RootPresentableListener: class {
 }
 
 final class RootViewController: UIViewController, RootPresentable, RootViewControllable {
-    
+ 
     weak var listener: RootPresentableListener?
     
     func present(viewController: ViewControllable) {
         viewController.uiviewController.modalPresentationStyle = .fullScreen
         present(viewController.uiviewController, animated: false, completion: nil)
+    }
+    
+    func dismiss(viewController: ViewControllable) {
+        if presentingViewController === viewController.uiviewController {
+            dismiss(animated: true, completion: nil)
+        }
     }
 }

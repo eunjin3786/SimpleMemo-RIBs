@@ -164,9 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				AC3F04E623C772BA005ED8E6 /* LoggedOutRouter.swift */,
-				AC3F04E723C772BA005ED8E6 /* LoggedOutViewController.swift */,
 				AC3F04E823C772BA005ED8E6 /* LoggedOutBuilder.swift */,
 				AC3F04E923C772BA005ED8E6 /* LoggedOutInteractor.swift */,
+				AC3F04E723C772BA005ED8E6 /* LoggedOutViewController.swift */,
 				AC3F04EA23C772BA005ED8E6 /* LoggedOutViewController.xib */,
 			);
 			path = LoggedOut;

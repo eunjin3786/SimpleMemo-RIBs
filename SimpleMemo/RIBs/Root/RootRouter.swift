@@ -10,11 +10,13 @@ protocol RootInteractable: Interactable, LoggedOutListener  {
 protocol RootViewControllable: ViewControllable {
     // TODO: Declare methods the router invokes to manipulate the view hierarchy.
     func present(viewController: ViewControllable)
+    func dismiss(viewController: ViewControllable)
 }
 
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
-    
+
     private let loggedOutBuilder: LoggedOutBuildable
+    private var loggedOutRouting: ViewableRouting?
     
     init(interactor: RootInteractable,
          viewController: RootViewControllable,
@@ -26,8 +28,17 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     
     func routeToLoggedOutRIB() {
         let loggedOutRouting = loggedOutBuilder.build(withListener: interactor)
+        self.loggedOutRouting = loggedOutRouting
         attachChild(loggedOutRouting)
         viewController.present(viewController: loggedOutRouting.viewControllable)
+    }
+    
+    func routeToLoggedInRIB(email: String, password: String) {
+        if let loggedOutRouting = loggedOutRouting {
+            detachChild(loggedOutRouting)
+            viewController.dismiss(viewController: loggedOutRouting.viewControllable)
+            self.loggedOutRouting = nil
+        }
     }
     
     override func didLoad() {
