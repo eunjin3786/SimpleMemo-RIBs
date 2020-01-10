@@ -14,7 +14,7 @@ class MemoCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
 }
 
-class MemosViewController: UIViewController {
+class _MemosViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBAction func logoutButtonPressed(_ sender: Any) {
@@ -39,7 +39,7 @@ class MemosViewController: UIViewController {
     }
 }
 
-extension MemosViewController: UITableViewDelegate {
+extension _MemosViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let change = changeAction(at: indexPath)

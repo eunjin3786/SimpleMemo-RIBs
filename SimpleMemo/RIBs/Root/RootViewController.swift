@@ -30,6 +30,10 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    override func viewDidLoad() {
+        self.view.backgroundColor = .white
+    }
 }
 
 // MARK: LoggedInViewControllable

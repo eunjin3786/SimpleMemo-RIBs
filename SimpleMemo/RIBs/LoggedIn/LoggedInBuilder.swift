@@ -15,7 +15,7 @@ protocol LoggedInDependency: Dependency {
     // created by this RIB.
 }
 
-final class LoggedInComponent: Component<LoggedInDependency> {
+final class LoggedInComponent: Component<LoggedInDependency>, MemosDependency {
 
     // TODO: Make sure to convert the variable into lower-camelcase.
     fileprivate var LoggedInViewController: LoggedInViewControllable {
@@ -55,6 +55,10 @@ final class LoggedInBuilder: Builder<LoggedInDependency>, LoggedInBuildable {
                                           password: password)
         let interactor = LoggedInInteractor()
         interactor.listener = listener
-        return LoggedInRouter(interactor: interactor, viewController: component.LoggedInViewController)
+        
+        let memosBuilder = MemosBuilder(dependency: component)
+        return LoggedInRouter(interactor: interactor,
+                              viewController: component.LoggedInViewController,
+                              memosBuilder: memosBuilder)
     }
 }
