@@ -46,6 +46,13 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     }
     
     func loginDidTap(email: String, password: String) {
-        listener?.login(email: email, password: password)
+        FirebaseManager.login(email: email, password: password, completion: { [weak self] result in
+            switch result {
+            case .success:
+                self?.listener?.login(email: email, password: password)
+            case .failure(let failure):
+                Navigator.presentAlert(with: failure.localizedDescription)
+            }
+        })
     }
 }
