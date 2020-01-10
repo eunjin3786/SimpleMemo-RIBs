@@ -2,7 +2,7 @@
 import RIBs
 import RxSwift
 
-protocol RootInteractable: Interactable, LoggedOutListener  {
+protocol RootInteractable: Interactable, LoggedOutListener, LoggedInListener  {
     var router: RootRouting? { get set }
     var listener: RootListener? { get set }
 }
@@ -18,10 +18,14 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     private let loggedOutBuilder: LoggedOutBuildable
     private var loggedOutRouting: ViewableRouting?
     
+    private let loggedInBuilder: LoggedInBuildable
+    
     init(interactor: RootInteractable,
          viewController: RootViewControllable,
-         loggedOutBuilder: LoggedOutBuildable) {
+         loggedOutBuilder: LoggedOutBuildable,
+         loggedInBuilder: LoggedInBuildable) {
         self.loggedOutBuilder = loggedOutBuilder
+        self.loggedInBuilder = loggedInBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -39,6 +43,11 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
             viewController.dismiss(viewController: loggedOutRouting.viewControllable)
             self.loggedOutRouting = nil
         }
+        
+        let loggedInRouting = loggedInBuilder.build(withListener: interactor,
+                                                    email: email,
+                                                    password: password)
+        attachChild(loggedInRouting)
     }
     
     override func didLoad() {

@@ -36,6 +36,9 @@
 		ACC0ACDB22A0FA400017BBB8 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */; };
 		ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */; };
 		ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACE022A1406B0017BBB8 /* Navigator.swift */; };
+		C214C78123C8566C00B760DC /* LoggedInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214C77E23C8566C00B760DC /* LoggedInRouter.swift */; };
+		C214C78223C8566C00B760DC /* LoggedInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214C77F23C8566C00B760DC /* LoggedInBuilder.swift */; };
+		C214C78323C8566C00B760DC /* LoggedInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214C78023C8566C00B760DC /* LoggedInInteractor.swift */; };
 		C221BA4023C5B6F20054297C /* JinnyAppKit in Frameworks */ = {isa = PBXBuildFile; productRef = C221BA3F23C5B6F20054297C /* JinnyAppKit */; };
 		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
 		C2FCA05A22C7545C0094894D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA05922C7545C0094894D /* LoginManager.swift */; };
@@ -77,6 +80,9 @@
 		ACC0ACDA22A0FA400017BBB8 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SimpleMemo.swift"; sourceTree = "<group>"; };
 		ACC0ACE022A1406B0017BBB8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		C214C77E23C8566C00B760DC /* LoggedInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInRouter.swift; sourceTree = "<group>"; };
+		C214C77F23C8566C00B760DC /* LoggedInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInBuilder.swift; sourceTree = "<group>"; };
+		C214C78023C8566C00B760DC /* LoggedInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInInteractor.swift; sourceTree = "<group>"; };
 		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
 		C2FCA05922C7545C0094894D /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +142,7 @@
 			children = (
 				AC3F04D123C4ED50005ED8E6 /* Root */,
 				AC3F04E523C77293005ED8E6 /* LoggedOut */,
+				C214C77D23C8557F00B760DC /* LoggedIn */,
 			);
 			path = RIBs;
 			sourceTree = "<group>";
@@ -254,6 +261,16 @@
 				ACC0ACE022A1406B0017BBB8 /* Navigator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C214C77D23C8557F00B760DC /* LoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				C214C77E23C8566C00B760DC /* LoggedInRouter.swift */,
+				C214C77F23C8566C00B760DC /* LoggedInBuilder.swift */,
+				C214C78023C8566C00B760DC /* LoggedInInteractor.swift */,
+			);
+			path = LoggedIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,8 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C214C78223C8566C00B760DC /* LoggedInBuilder.swift in Sources */,
 				AC7E1F1C229A804F001180C3 /* MemosViewModel.swift in Sources */,
 				AC3F04EE23C772BA005ED8E6 /* LoggedOutInteractor.swift in Sources */,
+				C214C78323C8566C00B760DC /* LoggedInInteractor.swift in Sources */,
 				AC3F04EC23C772BA005ED8E6 /* LoggedOutViewController.swift in Sources */,
 				AC3F04ED23C772BA005ED8E6 /* LoggedOutBuilder.swift in Sources */,
 				C2FCA05A22C7545C0094894D /* LoginManager.swift in Sources */,
@@ -391,6 +410,7 @@
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC7E1F15229A73BF001180C3 /* MemosViewController.swift in Sources */,
 				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
+				C214C78123C8566C00B760DC /* LoggedInRouter.swift in Sources */,
 				ACC0ACD322A073A60017BBB8 /* LoginViewController.swift in Sources */,
 				AC7E1F21229A815C001180C3 /* Memo.swift in Sources */,
 				ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */,
