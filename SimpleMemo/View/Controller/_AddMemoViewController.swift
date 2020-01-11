@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 
-class AddMemoViewController: UIViewController {
+class _AddMemoViewController: UIViewController {
     
     @IBOutlet weak var addMemoTextField: UITextField!
     @IBOutlet weak var saveMemoButton: UIButton!

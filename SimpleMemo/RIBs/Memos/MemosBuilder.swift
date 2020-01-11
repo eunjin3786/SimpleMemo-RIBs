@@ -13,7 +13,7 @@ protocol MemosDependency: Dependency {
     // created by this RIB.
 }
 
-final class MemosComponent: Component<MemosDependency> {
+final class MemosComponent: Component<MemosDependency>, AddMemoDependency {
 
     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
 }
@@ -35,6 +35,9 @@ final class MemosBuilder: Builder<MemosDependency>, MemosBuildable {
         let viewController = MemosViewController.instantiate()
         let interactor = MemosInteractor(presenter: viewController)
         interactor.listener = listener
-        return MemosRouter(interactor: interactor, viewController: viewController)
+        let addMemoBuilder = AddMemoBuilder(dependency: component)
+        return MemosRouter(interactor: interactor,
+                           viewController: viewController,
+                           addMemoBuilder: addMemoBuilder)
     }
 }

@@ -18,20 +18,28 @@ protocol MemosPresentableListener: class {
     var memos: BehaviorRelay<[Memo]> { get }
     var deleteMemo: PublishSubject<Memo> { get }
     var changeMemo: PublishSubject<Memo> { get }
+    var addMemo: PublishSubject<Void> { get }
 }
 
-final class MemosViewController: UIViewController, MemosPresentable, MemosViewControllable {
+class MemoCell: UITableViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+}
+
+final class MemosViewController: UIViewController, MemosPresentable {
+
+    @IBOutlet weak var tableView: UITableView!
 
     weak var listener: MemosPresentableListener?
-    
-    @IBOutlet weak var tableView: UITableView!
+    private let disposeBag = DisposeBag()
     
     static func instantiate() -> Self {
         return Storyboard.MemosViewController.instantiate(self)
     }
     
-    private let disposeBag = DisposeBag()
-     
+    @IBAction func addMemoButtonDidTap(_ sender: Any) {
+        listener?.addMemo.onNext(())
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
@@ -58,6 +66,7 @@ final class MemosViewController: UIViewController, MemosPresentable, MemosViewCo
     }
 }
 
+// MARK: UITableViewDelegate
 extension MemosViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -112,6 +121,9 @@ extension MemosViewController: UITableViewDelegate {
     }
 }
 
-class MemoCell: UITableViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
+// MARK: MemoViewControllable
+extension MemosViewController: MemosViewControllable {
+    func push(viewController: ViewControllable) {
+        self.navigationController?.pushViewController(viewController.uiviewController, animated: true)
+    }
 }

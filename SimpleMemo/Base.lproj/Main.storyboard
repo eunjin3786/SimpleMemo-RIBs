@@ -84,7 +84,7 @@
         <!--Add Memo View Controller-->
         <scene sceneID="GJ3-Hs-f4V">
             <objects>
-                <viewController storyboardIdentifier="AddMemoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jAi-cD-73N" customClass="AddMemoViewController" customModule="SimpleMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="_AddMemoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jAi-cD-73N" customClass="_AddMemoViewController" customModule="SimpleMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mik-YS-KAF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
