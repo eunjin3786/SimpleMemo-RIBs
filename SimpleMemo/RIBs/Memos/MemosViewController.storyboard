@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pJp-0L-DSL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Memos-->
+        <scene sceneID="xtv-vB-tpe">
+            <objects>
+                <viewController id="pJp-0L-DSL" customClass="MemosViewController" customModule="SimpleMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecf-Sa-xjI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D06-Ze-eWR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MemoCell" rowHeight="72" id="rcI-b7-NtC" customClass="MemoCell" customModule="SimpleMemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rcI-b7-NtC" id="k61-Dm-Jfy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2G-6g-cEH">
+                                                    <rect key="frame" x="15" y="15" width="384" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="d2G-6g-cEH" secondAttribute="trailing" constant="15" id="95w-cD-uqv"/>
+                                                <constraint firstItem="d2G-6g-cEH" firstAttribute="leading" secondItem="k61-Dm-Jfy" secondAttribute="leading" constant="15" id="CpX-RL-jgA"/>
+                                                <constraint firstAttribute="bottom" secondItem="d2G-6g-cEH" secondAttribute="bottom" constant="15" id="drf-3F-c1v"/>
+                                                <constraint firstItem="d2G-6g-cEH" firstAttribute="top" secondItem="k61-Dm-Jfy" secondAttribute="top" constant="15" id="wBh-9a-k0m"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="d2G-6g-cEH" id="W68-Eb-0vT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-xG-xv6">
+                                <rect key="frame" x="310" y="758" width="64" height="64"/>
+                                <state key="normal" image="add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="knV-pa-3UH" firstAttribute="bottom" secondItem="D06-Ze-eWR" secondAttribute="bottom" id="05Z-64-LBD"/>
+                            <constraint firstItem="knV-pa-3UH" firstAttribute="bottom" secondItem="Cma-xG-xv6" secondAttribute="bottom" constant="40" id="GXh-hh-rOg"/>
+                            <constraint firstItem="D06-Ze-eWR" firstAttribute="top" secondItem="knV-pa-3UH" secondAttribute="top" id="GbQ-Ft-s1U"/>
+                            <constraint firstItem="knV-pa-3UH" firstAttribute="trailing" secondItem="D06-Ze-eWR" secondAttribute="trailing" id="Hk3-PA-PcY"/>
+                            <constraint firstItem="Cma-xG-xv6" firstAttribute="trailing" secondItem="knV-pa-3UH" secondAttribute="trailing" constant="-40" id="QR3-Ng-clL"/>
+                            <constraint firstItem="D06-Ze-eWR" firstAttribute="leading" secondItem="knV-pa-3UH" secondAttribute="leading" id="pbv-5e-YQq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="knV-pa-3UH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Memos" id="rla-SQ-02A"/>
+                    <connections>
+                        <outlet property="tableView" destination="D06-Ze-eWR" id="IMp-u3-ttd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSb-a9-SQF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079.7101449275365" y="377.67857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="64" height="64"/>
+    </resources>
+</document>

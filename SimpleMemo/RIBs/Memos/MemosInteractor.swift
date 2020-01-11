@@ -8,6 +8,7 @@
 
 import RIBs
 import RxSwift
+import RxCocoa
 
 protocol MemosRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
@@ -22,11 +23,23 @@ protocol MemosListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInteractable, MemosPresentableListener {
+final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInteractable {
 
     weak var router: MemosRouting?
     weak var listener: MemosListener?
-
+    
+    struct State {
+        var memos: BehaviorRelay<[Memo]> = BehaviorRelay.init(value: [])
+    }
+    
+    struct Action {
+        let deleteMemo = PublishSubject<Memo>()
+        let changeMemo = PublishSubject<Memo>()
+    }
+    
+    let state = State()
+    let action = Action()
+    
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
     override init(presenter: MemosPresentable) {
@@ -37,10 +50,36 @@ final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInter
     override func didBecomeActive() {
         super.didBecomeActive()
         // TODO: Implement business logic here.
+        action.deleteMemo.subscribe(onNext: { memo in
+            FirebaseManager.delete(key: memo.ID)
+        }).disposeOnDeactivate(interactor: self)
+        
+        action.changeMemo.subscribe(onNext: { memo in
+            FirebaseManager.change(key: memo.ID, to: memo)
+        }).disposeOnDeactivate(interactor: self)
+
+        FirebaseManager.fetchAll()
+            .bind(to: state.memos)
+            .disposeOnDeactivate(interactor: self)
     }
 
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+}
+
+// MARK: MemosPresentableListener
+extension MemosInteractor: MemosPresentableListener {
+    var memos: BehaviorRelay<[Memo]> {
+        return state.memos
+    }
+    
+    var deleteMemo: PublishSubject<Memo> {
+        return action.deleteMemo
+    }
+    
+    var changeMemo: PublishSubject<Memo> {
+        return action.changeMemo
     }
 }

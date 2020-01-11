@@ -10,9 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MemoCell: UITableViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
-}
+
 
 class _MemosViewController: UIViewController {
     

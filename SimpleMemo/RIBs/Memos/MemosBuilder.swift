@@ -32,7 +32,7 @@ final class MemosBuilder: Builder<MemosDependency>, MemosBuildable {
 
     func build(withListener listener: MemosListener) -> MemosRouting {
         let component = MemosComponent(dependency: dependency)
-        let viewController = MemosViewController()
+        let viewController = MemosViewController.instantiate()
         let interactor = MemosInteractor(presenter: viewController)
         interactor.listener = listener
         return MemosRouter(interactor: interactor, viewController: viewController)
