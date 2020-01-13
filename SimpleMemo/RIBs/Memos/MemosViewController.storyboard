@@ -48,10 +48,10 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-xG-xv6">
-                                <rect key="frame" x="310" y="758" width="64" height="64"/>
+                                <rect key="frame" x="246" y="694" width="128" height="128"/>
                                 <state key="normal" image="add"/>
                                 <connections>
-                                    <action selector="addMemoButtonDidTap:" destination="pJp-0L-DSL" eventType="touchUpInside" id="aaK-eo-e5v"/>
+                                    <action selector="moveToAddMemoButtonDidTap:" destination="pJp-0L-DSL" eventType="touchUpInside" id="E9u-5a-O9H"/>
                                 </connections>
                             </button>
                         </subviews>

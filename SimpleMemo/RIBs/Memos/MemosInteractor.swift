@@ -12,7 +12,7 @@ import RxCocoa
 
 protocol MemosRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
-    func addMemo()
+    func moveToAddMemo()
 }
 
 protocol MemosPresentable: Presentable {
@@ -36,7 +36,6 @@ final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInter
     struct Action {
         let deleteMemo = PublishSubject<Memo>()
         let changeMemo = PublishSubject<Memo>()
-        let addMemo = PublishSubject<Void>()
     }
     
     let state = State()
@@ -59,11 +58,7 @@ final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInter
         action.changeMemo.subscribe(onNext: { memo in
             FirebaseManager.change(key: memo.ID, to: memo)
         }).disposeOnDeactivate(interactor: self)
-        
-        action.addMemo.subscribe(onNext: { [weak self] _ in
-            self?.router?.addMemo()
-        }).disposeOnDeactivate(interactor: self)
-        
+
         FirebaseManager.fetchAll()
             .bind(to: state.memos)
             .disposeOnDeactivate(interactor: self)
@@ -89,7 +84,7 @@ extension MemosInteractor: MemosPresentableListener {
         return action.changeMemo
     }
     
-    var addMemo: PublishSubject<Void> {
-        return action.addMemo
+    func moveToAddMemoButtonDidTap() {
+        router?.moveToAddMemo()
     }
 }

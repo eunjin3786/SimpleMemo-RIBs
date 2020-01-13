@@ -18,7 +18,7 @@ protocol MemosPresentableListener: class {
     var memos: BehaviorRelay<[Memo]> { get }
     var deleteMemo: PublishSubject<Memo> { get }
     var changeMemo: PublishSubject<Memo> { get }
-    var addMemo: PublishSubject<Void> { get }
+    func moveToAddMemoButtonDidTap()
 }
 
 class MemoCell: UITableViewCell {
@@ -36,8 +36,8 @@ final class MemosViewController: UIViewController, MemosPresentable {
         return Storyboard.MemosViewController.instantiate(self)
     }
     
-    @IBAction func addMemoButtonDidTap(_ sender: Any) {
-        listener?.addMemo.onNext(())
+    @IBAction func moveToAddMemoButtonDidTap (_ sender: Any) {
+        listener?.moveToAddMemoButtonDidTap()
     }
     
     override func viewDidLoad() {
