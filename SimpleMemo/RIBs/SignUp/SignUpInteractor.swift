@@ -1,11 +1,3 @@
-//
-//  SignUpInteractor.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/15.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
-
 import RIBs
 import RxSwift
 

@@ -1,11 +1,3 @@
-//
-//  MemosBuilder.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/10.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
-
 import RIBs
 
 protocol MemosDependency: Dependency {

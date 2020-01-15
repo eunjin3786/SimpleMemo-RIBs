@@ -1,11 +1,3 @@
-//
-//  AddMemoViewController.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/11.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
-
 import RIBs
 import RxSwift
 import UIKit

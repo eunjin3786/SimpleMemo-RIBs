@@ -1,11 +1,3 @@
-//
-//  LoggedOutRouter.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/09.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
-
 import RIBs
 
 protocol LoggedOutInteractable: Interactable, SignUpListener {

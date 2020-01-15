@@ -1,11 +1,3 @@
-//
-//  RootBuilder.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/08.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
-
 import RIBs
 
 protocol RootDependency: Dependency {
