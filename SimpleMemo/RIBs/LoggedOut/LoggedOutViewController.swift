@@ -47,8 +47,8 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
                 isValid ? (self?.loginButton.isEnabled = true) : (self?.loginButton.isEnabled = false)
             }).disposed(by: bag)
         
-        loginButton.rx.tap.map {
-            return (self.emailTextField.text ?? "", self.passwordTextField.text ?? "")
+        loginButton.rx.tap.map { [weak self] _ in
+            return (self?.emailTextField.text ?? "", self?.passwordTextField.text ?? "")
         }.subscribe(onNext: { [weak self] email, password in
             self?.listener?.loginDidTap(email: email, password: password)
         }).disposed(by: bag)
