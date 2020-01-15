@@ -58,4 +58,9 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
     func navigationBack() {
         router?.detachSignUpRIB()
     }
+    
+    func signupAndLoginDidSuccess() {
+        router?.detachSignUpRIB()
+        listener?.login()
+    }
 }

@@ -21,7 +21,7 @@ protocol SignUpPresentable: Presentable {
 protocol SignUpListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
     func navigationBack()
-    //func signupDidSuccess()
+    func signupAndLoginDidSuccess()
 }
 
 final class SignUpInteractor: PresentableInteractor<SignUpPresentable>, SignUpInteractable, SignUpPresentableListener {
@@ -51,11 +51,11 @@ final class SignUpInteractor: PresentableInteractor<SignUpPresentable>, SignUpIn
     }
     
     func signupDidTap(email: String, password: String) {
-        FirebaseManager.signup(email: email, password: password, completion: { result in
+        FirebaseManager.signup(email: email, password: password, completion: { [weak self] result in
             switch result {
             case .success:
                 Navigator.presentAlert(with: "회원가입 완료", action: { _ in
-                    
+                    self?.listener?.signupAndLoginDidSuccess()
                 })
             case .failure(let error):
                 Navigator.presentAlert(with: error.localizedDescription)
