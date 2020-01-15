@@ -29,7 +29,17 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setNavigationBar()
+        bindUI()
+    }
+    
+    private func setNavigationBar() {
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "MintColor") ?? .white
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationItem.title = "Simple Memo"
+    }
+    
+    private func bindUI() {
         Observable.combineLatest(emailTextField.rx.text.orEmpty, passwordTextField.rx.text.orEmpty) { email, password -> Bool in
             return LoginTextInputManager.isValidEmail(email) && LoginTextInputManager.isValidPassword(password)
             }
@@ -37,8 +47,8 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
                 isValid ? (self?.loginButton.isEnabled = true) : (self?.loginButton.isEnabled = false)
             }).disposed(by: bag)
         
-        loginButton.rx.tap.map { [weak self] _ in
-            return (self?.emailTextField.text ?? "", self?.passwordTextField.text ?? "")
+        loginButton.rx.tap.map {
+            return (self.emailTextField.text ?? "", self.passwordTextField.text ?? "")
         }.subscribe(onNext: { [weak self] email, password in
             self?.listener?.loginDidTap(email: email, password: password)
         }).disposed(by: bag)

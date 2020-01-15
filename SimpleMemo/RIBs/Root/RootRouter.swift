@@ -52,13 +52,18 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         let loggedOutRouting = loggedOutBuilder.build(withListener: interactor)
         self.loggedOutRouting = loggedOutRouting
         attachChild(loggedOutRouting)
-        viewController.present(viewController: loggedOutRouting.viewControllable)
+        let navigationController = UINavigationController(root: loggedOutRouting.viewControllable)
+        viewController.present(viewController: navigationController)
     }
     
     func routeToLoggedInRIB() {
         if let loggedOutRouting = loggedOutRouting {
             detachChild(loggedOutRouting)
-            viewController.dismiss(viewController: loggedOutRouting.viewControllable)
+            if let navigationController = loggedOutRouting.viewControllable.uiviewController.navigationController {
+                viewController.dismiss(viewController: navigationController)
+            } else {
+                viewController.dismiss(viewController: loggedOutRouting.viewControllable)
+            }
             self.loggedOutRouting = nil
         }
         

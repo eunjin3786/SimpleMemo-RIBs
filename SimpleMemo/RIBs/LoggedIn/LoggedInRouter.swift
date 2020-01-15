@@ -58,8 +58,10 @@ final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
     func detachMemosRIB() {
         guard let memosRouting = memosRouting else { return }
         detachChild(memosRouting)
-        if let vc = memosRouting.viewControllable as? UIViewController, let navigationController = vc.navigationController {
-             viewController.dismiss(viewController: navigationController)
+        if let navigationController = memosRouting.viewControllable.uiviewController.navigationController {
+            viewController.dismiss(viewController: navigationController)
+        } else {
+            viewController.dismiss(viewController: memosRouting.viewControllable)
         }
         self.memosRouting = nil
     }
