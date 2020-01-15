@@ -18,6 +18,7 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     private var loggedOutRouting: ViewableRouting?
     
     private let loggedInBuilder: LoggedInBuildable
+    private var loggedInRouting: LoggedInRouting?
     
     init(interactor: RootInteractable,
          viewController: RootViewControllable,
@@ -43,6 +44,11 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     }
     
     func routeToLoggedOutRIB() {
+        if let loggedInRouting = loggedInRouting {
+            detachChild(loggedInRouting)
+            self.loggedInRouting = nil
+        }
+        
         let loggedOutRouting = loggedOutBuilder.build(withListener: interactor)
         self.loggedOutRouting = loggedOutRouting
         attachChild(loggedOutRouting)
@@ -57,6 +63,7 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         }
         
         let loggedInRouting = loggedInBuilder.build(withListener: interactor)
+        self.loggedInRouting = loggedInRouting
         attachChild(loggedInRouting)
     }
 }

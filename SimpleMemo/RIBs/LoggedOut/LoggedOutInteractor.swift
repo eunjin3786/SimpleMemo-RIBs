@@ -20,7 +20,7 @@ protocol LoggedOutPresentable: Presentable {
 
 protocol LoggedOutListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
-    func login(email: String, password: String)
+    func login()
 }
 
 final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
@@ -49,7 +49,7 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
         FirebaseManager.login(email: email, password: password, completion: { [weak self] result in
             switch result {
             case .success:
-                self?.listener?.login(email: email, password: password)
+                self?.listener?.login()
             case .failure(let failure):
                 Navigator.presentAlert(with: failure.localizedDescription)
             }

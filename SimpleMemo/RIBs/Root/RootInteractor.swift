@@ -25,7 +25,7 @@ protocol RootListener: class {
 }
 
 final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteractable, RootPresentableListener {
-
+    
     weak var router: RootRouting?
     weak var listener: RootListener?
 
@@ -46,7 +46,11 @@ final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteract
         // TODO: Pause any business logic.
     }
     
-    func login(email: String, password: String) {
+    func login() {
         router?.routeToLoggedInRIB()
+    }
+    
+    func logOut() {
+        router?.routeToLoggedOutRIB()
     }
 }

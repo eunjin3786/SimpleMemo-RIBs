@@ -23,6 +23,7 @@ protocol MemosPresentable: Presentable {
 
 protocol MemosListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+    func logOut()
 }
 
 final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInteractable {
@@ -90,5 +91,9 @@ extension MemosInteractor: MemosPresentableListener {
     
     func moveToAddMemoButtonDidTap() {
         router?.moveToAddMemo()
+    }
+    
+    func logOutButtonDidTap() {
+        listener?.logOut()
     }
 }

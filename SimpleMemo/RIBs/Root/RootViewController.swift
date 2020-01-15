@@ -27,7 +27,7 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
     
     func dismiss(viewController: ViewControllable) {
         if presentedViewController === viewController.uiviewController {
-            dismiss(animated: true, completion: nil)
+            dismiss(animated: false, completion: nil)
         }
     }
     
@@ -38,5 +38,5 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
 
 // MARK: LoggedInViewControllable
 extension RootViewController: LoggedInViewControllable {
-
+    
 }

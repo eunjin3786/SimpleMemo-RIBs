@@ -18,7 +18,9 @@ protocol MemosPresentableListener: class {
     var memos: BehaviorRelay<[Memo]> { get }
     var deleteMemo: PublishSubject<Memo> { get }
     var changeMemo: PublishSubject<Memo> { get }
+    
     func moveToAddMemoButtonDidTap()
+    func logOutButtonDidTap()
 }
 
 class MemoCell: UITableViewCell {
@@ -43,6 +45,7 @@ final class MemosViewController: UIViewController, MemosPresentable {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        setNavigationBarButton()
         bindTableView()
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
     }
@@ -55,6 +58,15 @@ final class MemosViewController: UIViewController, MemosPresentable {
         
         self.navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
+    private func setNavigationBarButton() {
+        let logOutBarButtonItem = UIBarButtonItem(title: "로그아웃", style: .plain, target: self, action: #selector(logOut))
+        self.navigationItem.rightBarButtonItem  = logOutBarButtonItem
+    }
+
+    @objc func logOut() {
+        listener?.logOutButtonDidTap()
     }
     
     private func bindTableView() {

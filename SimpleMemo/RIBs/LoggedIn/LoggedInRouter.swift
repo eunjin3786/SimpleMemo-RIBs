@@ -18,12 +18,14 @@ protocol LoggedInViewControllable: ViewControllable {
     // this RIB does not own its own view, this protocol is conformed to by one of this
     // RIB's ancestor RIBs' view.
     func present(viewController: ViewControllable)
+    func dismiss(viewController: ViewControllable)
 }
 
 final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
 
     private let viewController: LoggedInViewControllable
     private let memosBuilder: MemosBuildable
+    private var memosRouting: MemosRouting?
     
     // TODO: Constructor inject child builder protocols to allow building children.
     init(interactor: LoggedInInteractable,
@@ -42,9 +44,23 @@ final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
     
     override func didLoad() {
         super.didLoad()
+        routeToMemosRIB()
+    }
+    
+    func routeToMemosRIB() {
         let memosRouting = memosBuilder.build(withListener: interactor)
+        self.memosRouting = memosRouting
         attachChild(memosRouting)
         let navigationController = UINavigationController(root: memosRouting.viewControllable)
         viewController.present(viewController: navigationController)
+    }
+    
+    func detachMemosRIB() {
+        guard let memosRouting = memosRouting else { return }
+        detachChild(memosRouting)
+        if let vc = memosRouting.viewControllable as? UIViewController, let navigationController = vc.navigationController {
+             viewController.dismiss(viewController: navigationController)
+        }
+        self.memosRouting = nil
     }
 }

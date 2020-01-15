@@ -48,7 +48,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-xG-xv6">
-                                <rect key="frame" x="246" y="694" width="128" height="128"/>
+                                <rect key="frame" x="310" y="758" width="64" height="64"/>
                                 <state key="normal" image="add"/>
                                 <connections>
                                     <action selector="moveToAddMemoButtonDidTap:" destination="pJp-0L-DSL" eventType="touchUpInside" id="E9u-5a-O9H"/>
@@ -66,14 +66,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="knV-pa-3UH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Memos" id="rla-SQ-02A"/>
+                    <navigationItem key="navigationItem" title="Memos" id="rla-SQ-02A">
+                        <barButtonItem key="rightBarButtonItem" title="로그아웃" id="smX-wo-MMF"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="D06-Ze-eWR" id="IMp-u3-ttd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSb-a9-SQF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2079.7101449275365" y="377.67857142857139"/>
+            <point key="canvasLocation" x="2989.8550724637685" y="377.67857142857139"/>
         </scene>
     </scenes>
     <resources>
