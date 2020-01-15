@@ -13,6 +13,7 @@ import RxCocoa
 protocol MemosRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
     func moveToAddMemo()
+    func backFromAddMemo()
 }
 
 protocol MemosPresentable: Presentable {
@@ -25,7 +26,6 @@ protocol MemosListener: class {
 }
 
 final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInteractable {
-
     weak var router: MemosRouting?
     weak var listener: MemosListener?
     
@@ -67,6 +67,10 @@ final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInter
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    func navigationBack() {
+        router?.backFromAddMemo()
     }
 }
 

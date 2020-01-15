@@ -14,6 +14,7 @@ protocol AddMemoPresentableListener: class {
     // TODO: Declare properties and methods that the view controller can invoke to perform
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
+    func navigationBackDidTap()
 }
 
 final class AddMemoViewController: UIViewController, AddMemoPresentable, AddMemoViewControllable {
@@ -22,5 +23,12 @@ final class AddMemoViewController: UIViewController, AddMemoPresentable, AddMemo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if isMovingFromParent {
+            listener?.navigationBackDidTap()
+        }
     }
 }

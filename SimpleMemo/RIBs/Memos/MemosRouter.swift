@@ -21,6 +21,7 @@ protocol MemosViewControllable: ViewControllable {
 final class MemosRouter: ViewableRouter<MemosInteractable, MemosViewControllable>, MemosRouting {
 
     private let addMemoBuilder: AddMemoBuildable
+    private var addMemoRouting: AddMemoRouting?
 
     // TODO: Constructor inject child builder protocols to allow building children.
     init(interactor: MemosInteractable,
@@ -33,7 +34,14 @@ final class MemosRouter: ViewableRouter<MemosInteractable, MemosViewControllable
     
     func moveToAddMemo() {
         let addMemoRouting = addMemoBuilder.build(withListener: interactor)
+        self.addMemoRouting = addMemoRouting
         attachChild(addMemoRouting)
         viewController.push(viewController: addMemoRouting.viewControllable)
+    }
+    
+    func backFromAddMemo() {
+        guard let addMemoRouting = addMemoRouting else { return }
+        detachChild(addMemoRouting)
+        self.addMemoRouting = nil
     }
 }

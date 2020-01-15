@@ -20,6 +20,7 @@ protocol AddMemoPresentable: Presentable {
 
 protocol AddMemoListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+    func navigationBack()
 }
 
 final class AddMemoInteractor: PresentableInteractor<AddMemoPresentable>, AddMemoInteractable, AddMemoPresentableListener {
@@ -42,5 +43,9 @@ final class AddMemoInteractor: PresentableInteractor<AddMemoPresentable>, AddMem
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
+    }
+    
+    func navigationBackDidTap() {
+        listener?.navigationBack()
     }
 }
