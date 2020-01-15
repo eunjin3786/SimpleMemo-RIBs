@@ -14,7 +14,6 @@ protocol RootViewControllable: ViewControllable {
 }
 
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
-
     private let loggedOutBuilder: LoggedOutBuildable
     private var loggedOutRouting: ViewableRouting?
     
@@ -30,6 +29,19 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         interactor.router = self
     }
     
+    override func didLoad() {
+        super.didLoad()
+        route()
+    }
+    
+    func route() {
+        if FirebaseManager.isLogin {
+            routeToLoggedInRIB()
+        } else {
+            routeToLoggedOutRIB()
+        }
+    }
+    
     func routeToLoggedOutRIB() {
         let loggedOutRouting = loggedOutBuilder.build(withListener: interactor)
         self.loggedOutRouting = loggedOutRouting
@@ -37,21 +49,14 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         viewController.present(viewController: loggedOutRouting.viewControllable)
     }
     
-    func routeToLoggedInRIB(email: String, password: String) {
+    func routeToLoggedInRIB() {
         if let loggedOutRouting = loggedOutRouting {
             detachChild(loggedOutRouting)
             viewController.dismiss(viewController: loggedOutRouting.viewControllable)
             self.loggedOutRouting = nil
         }
         
-        let loggedInRouting = loggedInBuilder.build(withListener: interactor,
-                                                    email: email,
-                                                    password: password)
+        let loggedInRouting = loggedInBuilder.build(withListener: interactor)
         attachChild(loggedInRouting)
-    }
-    
-    override func didLoad() {
-        super.didLoad()
-        routeToLoggedOutRIB()
     }
 }

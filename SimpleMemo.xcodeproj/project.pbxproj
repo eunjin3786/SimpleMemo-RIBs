@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,6 @@
 		C214C78123C8566C00B760DC /* LoggedInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214C77E23C8566C00B760DC /* LoggedInRouter.swift */; };
 		C214C78223C8566C00B760DC /* LoggedInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214C77F23C8566C00B760DC /* LoggedInBuilder.swift */; };
 		C214C78323C8566C00B760DC /* LoggedInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214C78023C8566C00B760DC /* LoggedInInteractor.swift */; };
-		C221BA4023C5B6F20054297C /* JinnyAppKit in Frameworks */ = {isa = PBXBuildFile; productRef = C221BA3F23C5B6F20054297C /* JinnyAppKit */; };
 		C227CC6723CEDE1A00574AD0 /* AddMemoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6223CEDE1A00574AD0 /* AddMemoBuilder.swift */; };
 		C227CC6823CEDE1A00574AD0 /* AddMemoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6323CEDE1A00574AD0 /* AddMemoInteractor.swift */; };
 		C227CC6923CEDE1A00574AD0 /* AddMemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6423CEDE1A00574AD0 /* AddMemoRouter.swift */; };
@@ -116,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C221BA4023C5B6F20054297C /* JinnyAppKit in Frameworks */,
 				FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +350,6 @@
 			);
 			name = SimpleMemo;
 			packageProductDependencies = (
-				C221BA3F23C5B6F20054297C /* JinnyAppKit */,
 			);
 			productName = SimpleMemo;
 			productReference = AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */;
@@ -383,7 +380,6 @@
 			);
 			mainGroup = AC7E1EF6229A72A3001180C3;
 			packageReferences = (
-				C221BA3E23C5B6F20054297C /* XCRemoteSwiftPackageReference "JinnyAppKit" */,
 			);
 			productRefGroup = AC7E1F00229A72A4001180C3 /* Products */;
 			projectDirPath = "";
@@ -694,25 +690,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C221BA3E23C5B6F20054297C /* XCRemoteSwiftPackageReference "JinnyAppKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eunjin3786/JinnyAppKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C221BA3F23C5B6F20054297C /* JinnyAppKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C221BA3E23C5B6F20054297C /* XCRemoteSwiftPackageReference "JinnyAppKit" */;
-			productName = JinnyAppKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC7E1EF7229A72A3001180C3 /* Project object */;
 }
