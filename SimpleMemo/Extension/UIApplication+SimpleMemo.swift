@@ -1,11 +1,3 @@
-//
-//  UIApplication+SimpleMemo.swift
-//  SimpleMemo
-//
-//  Created by eunjin Jo on 31/05/2019.
-//  Copyright © 2019 eunjin. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
