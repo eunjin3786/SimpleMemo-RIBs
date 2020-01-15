@@ -1,16 +1,11 @@
-//
-//  LoggedOutInteractor.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/09.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
 
 import RIBs
 import RxSwift
 
 protocol LoggedOutRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func routeToSignUpRIB()
+    func detachSignUpRIB()
 }
 
 protocol LoggedOutPresentable: Presentable {
@@ -54,5 +49,13 @@ final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, Lo
                 Navigator.presentAlert(with: failure.localizedDescription)
             }
         })
+    }
+    
+    func moveToSignUpDidTap() {
+        router?.routeToSignUpRIB()
+    }
+    
+    func navigationBack() {
+        router?.detachSignUpRIB()
     }
 }

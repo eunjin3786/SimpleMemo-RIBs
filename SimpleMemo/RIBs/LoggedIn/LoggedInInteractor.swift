@@ -41,6 +41,7 @@ final class LoggedInInteractor: Interactor, LoggedInInteractable {
     }
     
     func logOut() {
+        FirebaseManager.logout()
         router?.detachMemosRIB()
         listener?.logOut()
     }

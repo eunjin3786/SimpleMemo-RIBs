@@ -8,10 +8,11 @@ protocol LoggedOutPresentableListener: class {
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
     func loginDidTap(email: String, password: String)
+    func moveToSignUpDidTap()
 }
 
 final class LoggedOutViewController: UIViewController, LoggedOutPresentable, LoggedOutViewControllable {
-    
+
     @IBOutlet weak var emailTextField: UITextField! {
         didSet {
             emailTextField.text = "simple@memo.com"
@@ -22,7 +23,9 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
             passwordTextField.text = "12345678"
         }
     }
+    
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     
     weak var listener: LoggedOutPresentableListener?
     private let bag = DisposeBag()
@@ -52,5 +55,13 @@ final class LoggedOutViewController: UIViewController, LoggedOutPresentable, Log
         }.subscribe(onNext: { [weak self] email, password in
             self?.listener?.loginDidTap(email: email, password: password)
         }).disposed(by: bag)
+        
+        signupButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.listener?.moveToSignUpDidTap()
+        }).disposed(by: bag)
+    }
+    
+    func push(viewController: ViewControllable) {
+        self.navigationController?.pushViewController(viewController.uiviewController, animated: true)
     }
 }

@@ -1,11 +1,3 @@
-//
-//  LoggedOutBuilder.swift
-//  SimpleMemo
-//
-//  Created by eunjin on 2020/01/09.
-//  Copyright © 2020 eunjin. All rights reserved.
-//
-
 import RIBs
 
 protocol LoggedOutDependency: Dependency {
@@ -13,7 +5,7 @@ protocol LoggedOutDependency: Dependency {
     // created by this RIB.
 }
 
-final class LoggedOutComponent: Component<LoggedOutDependency> {
+final class LoggedOutComponent: Component<LoggedOutDependency>, SignUpDependency {
 
     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
 }
@@ -35,6 +27,9 @@ final class LoggedOutBuilder: Builder<LoggedOutDependency>, LoggedOutBuildable {
         let viewController = LoggedOutViewController()
         let interactor = LoggedOutInteractor(presenter: viewController)
         interactor.listener = listener
-        return LoggedOutRouter(interactor: interactor, viewController: viewController)
+        let signUpBuilder = SignUpBuilder(dependency: component)
+        return LoggedOutRouter(interactor: interactor,
+                               viewController: viewController,
+                               signUpBuilder: signUpBuilder)
     }
 }

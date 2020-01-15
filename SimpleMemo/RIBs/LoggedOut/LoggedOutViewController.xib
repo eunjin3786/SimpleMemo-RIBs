@@ -13,6 +13,7 @@
                 <outlet property="emailTextField" destination="32r-jM-obW" id="Jsl-Ck-UKW"/>
                 <outlet property="loginButton" destination="QvW-hr-Uu7" id="kEK-Ez-30D"/>
                 <outlet property="passwordTextField" destination="bCJ-54-f2c" id="fdr-St-XiY"/>
+                <outlet property="signupButton" destination="UII-Tf-2ND" id="35o-mm-5gy"/>
                 <outlet property="view" destination="Sto-DK-HJz" id="Ywk-EZ-nmU"/>
             </connections>
         </placeholder>
@@ -53,13 +54,13 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 가입안하셨다면 🥰 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2j-yo-u3t">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 가입안하셨다면 🥰 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2j-yo-u3t">
                     <rect key="frame" x="196" y="287" width="169" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UII-Tf-2ND">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UII-Tf-2ND">
                     <rect key="frame" x="249" y="316" width="63" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="회원가입">
