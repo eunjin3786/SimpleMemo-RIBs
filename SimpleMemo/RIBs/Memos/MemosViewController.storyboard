@@ -50,9 +50,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-xG-xv6">
                                 <rect key="frame" x="310" y="758" width="64" height="64"/>
                                 <state key="normal" image="add"/>
-                                <connections>
-                                    <action selector="moveToAddMemoButtonDidTap:" destination="pJp-0L-DSL" eventType="touchUpInside" id="E9u-5a-O9H"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,6 +67,7 @@
                         <barButtonItem key="rightBarButtonItem" title="로그아웃" id="smX-wo-MMF"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="moveToAddMemoButton" destination="Cma-xG-xv6" id="Nl6-sv-ae9"/>
                         <outlet property="tableView" destination="D06-Ze-eWR" id="IMp-u3-ttd"/>
                     </connections>
                 </viewController>

@@ -8,9 +8,8 @@ protocol MemosPresentableListener: class {
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
     var memos: BehaviorRelay<[Memo]> { get }
-    var deleteMemo: PublishSubject<Memo> { get }
-    var changeMemo: PublishSubject<Memo> { get }
-    
+    func deleteMemo(_ memo: Memo)
+    func changeMemo(_ memo: Memo)
     func moveToAddMemoButtonDidTap()
     func logOutButtonDidTap()
 }
@@ -22,6 +21,7 @@ class MemoCell: UITableViewCell {
 final class MemosViewController: UIViewController, MemosPresentable {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var moveToAddMemoButton: UIButton!
 
     weak var listener: MemosPresentableListener?
     private let disposeBag = DisposeBag()
@@ -29,19 +29,14 @@ final class MemosViewController: UIViewController, MemosPresentable {
     static func instantiate() -> Self {
         return Storyboard.MemosViewController.instantiate(self)
     }
-    
-    @IBAction func moveToAddMemoButtonDidTap (_ sender: Any) {
-        listener?.moveToAddMemoButtonDidTap()
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
         setNavigationBarButton()
-        bindTableView()
-        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        bindUI()
     }
-    
+
     private func setNavigationBar() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.isTranslucent = false
@@ -56,9 +51,17 @@ final class MemosViewController: UIViewController, MemosPresentable {
         let logOutBarButtonItem = UIBarButtonItem(title: "로그아웃", style: .plain, target: self, action: #selector(logOut))
         self.navigationItem.rightBarButtonItem  = logOutBarButtonItem
     }
-
+    
     @objc func logOut() {
         listener?.logOutButtonDidTap()
+    }
+    
+    private func bindUI() {
+        moveToAddMemoButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.listener?.moveToAddMemoButtonDidTap()
+        }).disposed(by: disposeBag)
+        
+        bindTableView()
     }
     
     private func bindTableView() {
@@ -67,6 +70,8 @@ final class MemosViewController: UIViewController, MemosPresentable {
                 cell.titleLabel.text = memo.title
             }
         }.disposed(by: disposeBag)
+        
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
     }
 }
 
@@ -91,11 +96,11 @@ extension MemosViewController: UITableViewDelegate {
             let saveAction = UIAlertAction(title: "확인", style: .default, handler: { [weak self] _ in
                 if let textField = alertController.textFields?.first, let text = textField.text {
                     if text == "" {
-                        self?.listener?.deleteMemo.onNext(memo)
+                        self?.listener?.deleteMemo(memo)
                     } else {
                         var newMemo = memo
                         newMemo.title = text
-                        self?.listener?.changeMemo.onNext(newMemo)
+                        self?.listener?.changeMemo(newMemo)
                     }
                 }
                 self?.tableView.setEditing(false, animated: true)
@@ -117,7 +122,7 @@ extension MemosViewController: UITableViewDelegate {
         let action = UIContextualAction(style: .normal, title: "삭제") { [weak self] (action, view, completion) in
             guard let `self` = self else { return }
             if let memo = self.listener?.memos.value[indexPath.row] {
-                self.listener?.deleteMemo.onNext(memo)
+                self.listener?.deleteMemo(memo)
             }
         }
         action.backgroundColor = .red

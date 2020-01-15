@@ -7,7 +7,7 @@ protocol AddMemoPresentableListener: class {
     // business logic, such as signIn(). This protocol is implemented by the corresponding
     // interactor class.
     func navigationBackDidTap()
-    var saveMemo: PublishSubject<Memo> { get } 
+    func saveMemo(_ memo: Memo)
 }
 
 final class AddMemoViewController: UIViewController, AddMemoPresentable, AddMemoViewControllable {
@@ -29,7 +29,7 @@ final class AddMemoViewController: UIViewController, AddMemoPresentable, AddMemo
             .filter { !$0.isEmpty }
             .map { return Memo(title: $0) }
             .subscribe(onNext: { [weak self] memo in
-                self?.listener?.saveMemo.onNext(memo)
+                self?.listener?.saveMemo(memo)
             }).disposed(by: disposeBag)
     }
     

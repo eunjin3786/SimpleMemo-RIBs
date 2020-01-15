@@ -19,20 +19,11 @@ protocol MemosListener: class {
 }
 
 final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInteractable {
+    
     weak var router: MemosRouting?
     weak var listener: MemosListener?
     
-    struct State {
-        var memos: BehaviorRelay<[Memo]> = BehaviorRelay.init(value: [])
-    }
-    
-    struct Action {
-        let deleteMemo = PublishSubject<Memo>()
-        let changeMemo = PublishSubject<Memo>()
-    }
-    
-    let state = State()
-    let action = Action()
+    var memos: BehaviorRelay<[Memo]> = BehaviorRelay.init(value: [])
     
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
@@ -44,16 +35,8 @@ final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInter
     override func didBecomeActive() {
         super.didBecomeActive()
         // TODO: Implement business logic here.
-        action.deleteMemo.subscribe(onNext: { memo in
-            FirebaseManager.delete(key: memo.ID)
-        }).disposeOnDeactivate(interactor: self)
-        
-        action.changeMemo.subscribe(onNext: { memo in
-            FirebaseManager.change(key: memo.ID, to: memo)
-        }).disposeOnDeactivate(interactor: self)
-
         FirebaseManager.fetchAll()
-            .bind(to: state.memos)
+            .bind(to: memos)
             .disposeOnDeactivate(interactor: self)
     }
 
@@ -69,16 +52,13 @@ final class MemosInteractor: PresentableInteractor<MemosPresentable>, MemosInter
 
 // MARK: MemosPresentableListener
 extension MemosInteractor: MemosPresentableListener {
-    var memos: BehaviorRelay<[Memo]> {
-        return state.memos
+    
+    func deleteMemo(_ memo: Memo) {
+        FirebaseManager.delete(key: memo.ID)
     }
     
-    var deleteMemo: PublishSubject<Memo> {
-        return action.deleteMemo
-    }
-    
-    var changeMemo: PublishSubject<Memo> {
-        return action.changeMemo
+    func changeMemo(_ memo: Memo) {
+        FirebaseManager.change(key: memo.ID, to: memo)
     }
     
     func moveToAddMemoButtonDidTap() {

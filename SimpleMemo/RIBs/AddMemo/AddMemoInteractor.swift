@@ -19,17 +19,6 @@ final class AddMemoInteractor: PresentableInteractor<AddMemoPresentable>, AddMem
     
     weak var router: AddMemoRouting?
     weak var listener: AddMemoListener?
-    
-    struct State {
-        
-    }
-    
-    struct Action {
-        let saveMemo = PublishSubject<Memo>()
-    }
-    
-    let state = State()
-    let action = Action()
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
@@ -41,9 +30,6 @@ final class AddMemoInteractor: PresentableInteractor<AddMemoPresentable>, AddMem
     override func didBecomeActive() {
         super.didBecomeActive()
         // TODO: Implement business logic here.
-        action.saveMemo.subscribe(onNext: { memo in
-            FirebaseManager.add(memo: memo)
-        }).disposeOnDeactivate(interactor: self)
     }
 
     override func willResignActive() {
@@ -57,7 +43,7 @@ final class AddMemoInteractor: PresentableInteractor<AddMemoPresentable>, AddMem
 }
 
 extension AddMemoInteractor: AddMemoPresentableListener {
-    var saveMemo: PublishSubject<Memo> {
-        return action.saveMemo
+    func saveMemo(_ memo: Memo) {
+        FirebaseManager.add(memo: memo)
     }
 }
