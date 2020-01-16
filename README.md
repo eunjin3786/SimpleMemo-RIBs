@@ -7,12 +7,6 @@ RIBs로 바꾸어본 프로젝트입니다.
 
 
 
-https://www.notion.so/jinnystudy/RIBs-f73dec69f8994ef58a11dbb93cbf8c2a  
-
-
-
-
-
 ## 2. RIBs 간단 소개
 
 | Number |                            Title                             |                             Memo                             |
