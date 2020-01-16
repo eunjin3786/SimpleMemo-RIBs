@@ -48,5 +48,5 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 |   6    | [앱을 launch할때, RootRIB에서 스위칭하는 립을 로그인 상태에 따라 설정해주기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/6.%20앱을%20launch할때%2C%20RootRIB에서%20스위칭하는%20립을%20로그인%20상태에%20따라%20설정해주기.md) |      |
 |   7    | [MemosViewController에 로그아웃 버튼 달기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/7.%20MemosViewController에%20로그아웃%20버튼%20달기.md) |      |
 |   8    | [LoggedOutViewController에도 네비게이션 달기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/8.%20LoggedOutViewController에도%20네비게이션%20달기.md) |      |
-|   9    | LoggedOutViewController에 회원가입 버튼 달기 |      |
+|   9    | LoggedOutViewController에 회원가입 버튼 달기 |    - 적으면서 안하고 바로 작업해서 문서가 없음  |
 
