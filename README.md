@@ -3,7 +3,7 @@
 ## 1. 프로젝트 소개
 
 Firebase realtime database를 연습해보기 위해 [기존 MVVM로 구현했던 프로젝트](https://github.com/eunjin3786/SimpleMemo) 를
-RIBs로 바꾸어본 프로젝트입니다. 
+[RIBs](https://github.com/uber/RIBs)로 바꾸어본 프로젝트입니다. 
 
 
 
