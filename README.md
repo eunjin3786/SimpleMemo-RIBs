@@ -17,7 +17,7 @@ https://www.notion.so/jinnystudy/RIBs-f73dec69f8994ef58a11dbb93cbf8c2a
 
 | Number |                            Title                             |                             Memo                             |
 | :----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|   1    | [RIBs소개](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/1.%20기본개념.md) | - RIBs의 철학  <br />- RIB 트리, RIB 구성요소, RIB 라이프사이클<br />- RIB들간의 의사소통 |
+|   1    | [RIBs소개](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/RIBs소개.md) | - RIBs의 철학  <br />- RIB 트리, RIB 구성요소, RIB 라이프사이클<br />- RIB들간의 의사소통 |
 |   2    | [RIBs의 장단점](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/2.%20Components.md) |                                                              |
 |   3    | [RIBs 참고자료](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/2.%20Components.md) |                                                              |
 
