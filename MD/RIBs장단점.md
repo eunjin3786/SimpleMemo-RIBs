@@ -10,7 +10,7 @@ ex) viewController가 viewModel, reactor를 가지고 있다.
 ## 1.2 철저한 Scope 분리 
 
 오브젝트들의 scope가 제한된다는 점도 큰 강점이다. 
-- 립스에서는 해당 노드안에 특정 데이터가 존재한다는게 보장되니까 옵셔널과 if문이 빠질 수 있다. 
+립스에서는 해당 노드안에 특정 데이터가 존재한다는게 보장되니까 옵셔널과 if문이 빠질 수 있다. 
 
 예를 들어   
 
@@ -45,7 +45,7 @@ ride 상태라는 것이 보장되기 때문에 아래와 같은 if문이 빠지
 (출처: [RxRIBs: Multiplatform architecture with Rx](https://speakerdeck.com/vcnc/rxribs-multiplatform-architecture-with-rx) - 김남현님)
 
 
-- 부모 RIB에서 데이터를 주입해주니까 다른데서 변경이 불가하다는 점도 강점이다.
+또한 부모 RIB에서 데이터를 주입해주니까 다른데서 변경이 불가하다는 점도 강점이다.
 
 
 ## 1.3 협업 Good 
