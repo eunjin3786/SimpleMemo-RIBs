@@ -1,7 +1,7 @@
 # 1. RIBs의 강점
 
 ## 1.1 View-driven 아키텍쳐가 아니다
-대부분의 아키텍쳐는 뷰에 기반하여서 상태가 바뀌는 view driven 형태이다.
+대부분의 아키텍쳐는 뷰에 기반하여서 상태가 바뀌는 view driven 형태이다.  
 ex) viewController가 viewModel, reactor를 가지고 있다.  
 
 립스의 가장 큰 차이점은 뷰가 아니라 비즈니스 로직, 즉 RIB 트리에 의해 상태가 바뀐다는 것이다.  
