@@ -63,7 +63,8 @@ ride 상태라는 것이 보장되기 때문에 아래와 같은 if문이 빠지
 ## 1.4 템플릿 제공(테스트 코드에도)
 
 ### iOS
-[iOS code generation templates for Xcode](https://github.com/uber/RIBs/tree/master/ios/tooling)
+[iOS code generation templates for Xcode](https://github.com/uber/RIBs/tree/master/ios/tooling)  
+
 install-xcode-template.sh 을 run하면 Xcode에서 RIB 템플릿이 생기는데 진짜 편하다.  
 
 <img width="974" alt="스크린샷 2020-01-16 오후 10 31 02" src="https://user-images.githubusercontent.com/9502063/72529089-e1fb5a80-38af-11ea-9d8d-0b74202007ff.png">
