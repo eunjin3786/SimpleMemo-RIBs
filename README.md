@@ -27,7 +27,7 @@ https://www.notion.so/jinnystudy/RIBs-f73dec69f8994ef58a11dbb93cbf8c2a
 
 ## 3. RIB 트리 
 
-
+![무제 001](https://user-images.githubusercontent.com/9502063/72495313-b0f83700-3869-11ea-9f56-18d7e540fa36.jpeg)
 
 
 
