@@ -39,7 +39,7 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 
 | Number |                            Title                             | Memo |
 | :----: | :----------------------------------------------------------: | :--: |
-|   1    | [setup Root RIB](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/1.%20기본개념.md) |      |
+|   1    | [setup Root RIB](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/1.%20setup%20Root%20RIB.md) |      |
 |   2    | [LoggedOutRIB 만들기](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/2.%20Components.md) |      |
 |   3    | [LoggedInRIB 만들기](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/2.%20Components.md) |      |
 |   4    | [MemosRIB 만들기](https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/2.%20Components.md) |      |
