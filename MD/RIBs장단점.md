@@ -14,7 +14,8 @@ ex) viewController가 viewModel, reactor를 가지고 있다.
 
 예를 들어   
 
-이런 RIB트리가 있다고 하자. 
+이런 RIB트리가 있다고 하자.  
+
 <img width="823" alt="스크린샷 2020-01-16 오후 10 33 04" src="https://user-images.githubusercontent.com/9502063/72529225-2ab31380-38b0-11ea-8d7d-92619bee2a16.png">
 
 
