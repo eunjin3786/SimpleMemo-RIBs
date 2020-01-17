@@ -30,8 +30,8 @@ RIB 트리에서 하나의 노드를 RIB이라고 한다.
 
 - Builder를 보조해준다.
 - RIB dependencies 를 관리하기 위해 사용된다.
-- parent RIB의 Component는 child RIB의 Builder에 injected 된다. (child RIB이 parent RIB의 dependencies에 접근할 수 있게 하기 위해서)
-- parent RIB 입장에서는 Component는 chilRIB에게 어떤 dependencies를 노출할지 결정할 수 있는 것이다. 
+- parent RIB의 Component는 child RIB의 Builder에 injected 된다. (child RIB이 parent RIB의 dependencies에 접근할 수 있게 하기 위해서)  
+parent RIB 입장에서 본다면, Component를 통해 child RIB에게 어떤 dependencies를 노출할지 결정할 수 있게 되는 것이다. 
 
 - Each injected Component decides what dependencies to expose to the children on its own.
 - The Components provide access to the external dependencies that are needed to build  RIB as well as own the dependencies created by the RIB itself and control access to them from the other RIBs.
