@@ -81,61 +81,33 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
-		<key>Pods-SimpleMemoTests.xcscheme</key>
+		<key>RIBs.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
-		<key>RIBs-framework.xcscheme</key>
+		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>RIBs-library.xcscheme</key>
+		<key>RxRelay.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>RxAtomic-framework.xcscheme</key>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>16</integer>
-		</dict>
-		<key>RxAtomic-library.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>17</integer>
-		</dict>
-		<key>RxCocoa.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>18</integer>
-		</dict>
-		<key>RxSwift-framework.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>19</integer>
-		</dict>
-		<key>RxSwift-library.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>20</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>

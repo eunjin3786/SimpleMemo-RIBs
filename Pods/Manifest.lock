@@ -66,21 +66,23 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - RIBs (0.9.1):
-    - RxSwift (~> 4.0)
-  - RxAtomic (4.4.1)
-  - RxCocoa (4.4.1):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.4.1):
-    - RxAtomic (~> 4.4)
+  - RIBs (0.9.3):
+    - RxRelay (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
-  - RIBs (~> 0.9)
-  - RxCocoa
-  - RxSwift
+  - RIBs (from `https://github.com/uber/RIBs`, tag `0.9.2`)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -96,11 +98,20 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
-    - RxAtomic
-    - RxCocoa
-    - RxSwift
   trunk:
-    - RIBs
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  RIBs:
+    :git: https://github.com/uber/RIBs
+    :tag: 0.9.2
+
+CHECKOUT OPTIONS:
+  RIBs:
+    :git: https://github.com/uber/RIBs
+    :tag: 0.9.2
 
 SPEC CHECKSUMS:
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
@@ -115,11 +126,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
-  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
-  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
-  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RIBs: efceda5df20c1a1e05139232a4638a6242caa92a
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 920e7f793379451ab7f27b58dbd6b8f22ffc4c7e
+PODFILE CHECKSUM: af84a52e748950c325b17c38ed9551881867889b
 
 COCOAPODS: 1.8.4

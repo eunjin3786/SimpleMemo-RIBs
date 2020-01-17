@@ -6,15 +6,10 @@ target 'SimpleMemo' do
   use_frameworks!
 
   # Pods for SimpleMemo
-    pod 'RxSwift'
-    pod 'RxCocoa'
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
-    pod 'RIBs', '~> 0.9'
-end
-
-
-target 'SimpleMemoTests' do
-    pod 'RIBs', '~> 0.9'
+    pod 'RIBs', :git=> 'https://github.com/uber/RIBs', :tag => '0.9.2'
 end
