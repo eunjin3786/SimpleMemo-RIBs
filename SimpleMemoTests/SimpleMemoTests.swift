@@ -1,4 +1,6 @@
 import XCTest
+import RIBs
+@testable import SimpleMemo
 
 class SimpleMemoTests: XCTestCase {
 

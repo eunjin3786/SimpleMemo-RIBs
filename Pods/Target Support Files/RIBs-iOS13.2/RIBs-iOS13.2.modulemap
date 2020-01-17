@@ -1,0 +1,6 @@
+framework module RIBs {
+  umbrella header "RIBs-iOS13.2-umbrella.h"
+
+  export *
+  module * { export * }
+}

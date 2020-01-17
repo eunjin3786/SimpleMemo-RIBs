@@ -1,5 +1,5 @@
 framework module RIBs {
-  umbrella header "RIBs-umbrella.h"
+  umbrella header "RIBs-iOS12.2-umbrella.h"
 
   export *
   module * { export * }
