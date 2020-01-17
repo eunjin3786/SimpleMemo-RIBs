@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82BC8B961C617BAEAA8C8D44 /* libPods-SimpleMemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60857F005E1A7AB0F634689 /* libPods-SimpleMemoTests.a */; };
 		AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */; };
 		AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */; };
 		AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */; };
@@ -48,14 +49,26 @@
 		C227CC7423CEDE3C00574AD0 /* MemosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6F23CEDE3C00574AD0 /* MemosInteractor.swift */; };
 		C227CC7523CEDE3C00574AD0 /* MemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */; };
 		C227CC7623CEDE3C00574AD0 /* MemosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */; };
+		C28BFDBA23D1C513002C5E5C /* SimpleMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDB923D1C513002C5E5C /* SimpleMemoTests.swift */; };
 		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C28BFDBC23D1C513002C5E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC7E1EF7229A72A3001180C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7E1EFE229A72A4001180C3;
+			remoteInfo = SimpleMemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.release.xcconfig"; sourceTree = "<group>"; };
 		5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		98BD12E120861F5E106A73EF /* Pods-SimpleMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemoTests/Pods-SimpleMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
@@ -99,7 +112,12 @@
 		C227CC6F23CEDE3C00574AD0 /* MemosInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosInteractor.swift; sourceTree = "<group>"; };
 		C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosViewController.swift; sourceTree = "<group>"; };
 		C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemosViewController.storyboard; sourceTree = "<group>"; };
+		C28BFDB723D1C513002C5E5C /* SimpleMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28BFDB923D1C513002C5E5C /* SimpleMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMemoTests.swift; sourceTree = "<group>"; };
+		C28BFDBB23D1C513002C5E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
+		C2E43FEA8ADC03393FB388E3 /* Pods-SimpleMemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemoTests/Pods-SimpleMemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E60857F005E1A7AB0F634689 /* libPods-SimpleMemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleMemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +129,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C28BFDB423D1C513002C5E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BC8B961C617BAEAA8C8D44 /* libPods-SimpleMemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */,
+				E60857F005E1A7AB0F634689 /* libPods-SimpleMemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +154,8 @@
 			children = (
 				5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */,
 				4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */,
+				C2E43FEA8ADC03393FB388E3 /* Pods-SimpleMemoTests.debug.xcconfig */,
+				98BD12E120861F5E106A73EF /* Pods-SimpleMemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -219,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7E1F01229A72A4001180C3 /* SimpleMemo */,
+				C28BFDB823D1C513002C5E5C /* SimpleMemoTests */,
 				AC7E1F00229A72A4001180C3 /* Products */,
 				7D7C844DD5759FD6E90AE5AF /* Pods */,
 				11A3A1CF1719C005CA3518BC /* Frameworks */,
@@ -229,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */,
+				C28BFDB723D1C513002C5E5C /* SimpleMemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,12 +272,12 @@
 				AC3413B622AEA1850090487B /* Extension */,
 				AC3F052623C9775F005ED8E6 /* Environment */,
 				ACC0ACDD22A138E90017BBB8 /* Navigation */,
-				AC7E1F18229A8002001180C3 /* Model */,
 				AC3F04CC23C4C481005ED8E6 /* Utils */,
 				AC7E1F09229A72A7001180C3 /* Assets.xcassets */,
 				AC3F052923CA0004005ED8E6 /* Color.xcassets */,
 				AC7E1F0B229A72A7001180C3 /* LaunchScreen.storyboard */,
 				AC503E7D23CF5C7700FA1EC2 /* Main.storyboard */,
+				AC7E1F18229A8002001180C3 /* Model */,
 				AC7E1F0E229A72A7001180C3 /* Info.plist */,
 				AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */,
 			);
@@ -303,6 +334,15 @@
 			path = Memos;
 			sourceTree = "<group>";
 		};
+		C28BFDB823D1C513002C5E5C /* SimpleMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C28BFDB923D1C513002C5E5C /* SimpleMemoTests.swift */,
+				C28BFDBB23D1C513002C5E5C /* Info.plist */,
+			);
+			path = SimpleMemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,11 +361,28 @@
 			dependencies = (
 			);
 			name = SimpleMemo;
-			packageProductDependencies = (
-			);
 			productName = SimpleMemo;
 			productReference = AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C28BFDB623D1C513002C5E5C /* SimpleMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28BFDC023D1C513002C5E5C /* Build configuration list for PBXNativeTarget "SimpleMemoTests" */;
+			buildPhases = (
+				20510FAE660715125B119FE7 /* [CP] Check Pods Manifest.lock */,
+				C28BFDB323D1C513002C5E5C /* Sources */,
+				C28BFDB423D1C513002C5E5C /* Frameworks */,
+				C28BFDB523D1C513002C5E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28BFDBD23D1C513002C5E5C /* PBXTargetDependency */,
+			);
+			name = SimpleMemoTests;
+			productName = SimpleMemoTests;
+			productReference = C28BFDB723D1C513002C5E5C /* SimpleMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -333,12 +390,16 @@
 		AC7E1EF7229A72A3001180C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = eunjin;
 				TargetAttributes = {
 					AC7E1EFE229A72A4001180C3 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					C28BFDB623D1C513002C5E5C = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AC7E1EFE229A72A4001180C3;
 					};
 				};
 			};
@@ -351,13 +412,12 @@
 				Base,
 			);
 			mainGroup = AC7E1EF6229A72A3001180C3;
-			packageReferences = (
-			);
 			productRefGroup = AC7E1F00229A72A4001180C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AC7E1EFE229A72A4001180C3 /* SimpleMemo */,
+				C28BFDB623D1C513002C5E5C /* SimpleMemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,9 +439,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C28BFDB523D1C513002C5E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20510FAE660715125B119FE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4DC5714EC7AC5CE864D00182 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,7 +549,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C28BFDB323D1C513002C5E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28BFDBA23D1C513002C5E5C /* SimpleMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C28BFDBD23D1C513002C5E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7E1EFE229A72A4001180C3 /* SimpleMemo */;
+			targetProxy = C28BFDBC23D1C513002C5E5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC7E1F0B229A72A7001180C3 /* LaunchScreen.storyboard */ = {
@@ -525,6 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -580,6 +686,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -628,6 +735,50 @@
 			};
 			name = Release;
 		};
+		C28BFDBE23D1C513002C5E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E43FEA8ADC03393FB388E3 /* Pods-SimpleMemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4YL9RLK7;
+				INFOPLIST_FILE = SimpleMemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunjin.SimpleMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMemo.app/SimpleMemo";
+			};
+			name = Debug;
+		};
+		C28BFDBF23D1C513002C5E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98BD12E120861F5E106A73EF /* Pods-SimpleMemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4YL9RLK7;
+				INFOPLIST_FILE = SimpleMemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunjin.SimpleMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMemo.app/SimpleMemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -645,6 +796,15 @@
 			buildConfigurations = (
 				AC7E1F12229A72A7001180C3 /* Debug */,
 				AC7E1F13229A72A7001180C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28BFDC023D1C513002C5E5C /* Build configuration list for PBXNativeTarget "SimpleMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28BFDBE23D1C513002C5E5C /* Debug */,
+				C28BFDBF23D1C513002C5E5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

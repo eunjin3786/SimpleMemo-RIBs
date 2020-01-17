@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78CCAA2242A1DF1F4A0A1358A364382C"
+               BlueprintIdentifier = "505E08ECADF3429E301747D2A3A1C052"
                BuildableName = "Pods_SimpleMemo.framework"
                BlueprintName = "Pods-SimpleMemo"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,5 +1,5 @@
 framework module RIBs {
-  umbrella header "RIBs-umbrella.h"
+  umbrella header "RIBs-framework-umbrella.h"
 
   export *
   module * { export * }

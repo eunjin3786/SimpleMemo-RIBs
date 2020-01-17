@@ -13,3 +13,8 @@ target 'SimpleMemo' do
     pod 'Firebase/Auth'
     pod 'RIBs', '~> 0.9'
 end
+
+
+target 'SimpleMemoTests' do
+    pod 'RIBs', '~> 0.9'
+end

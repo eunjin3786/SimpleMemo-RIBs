@@ -1,0 +1,6 @@
+module Pods_SimpleMemoTests {
+  umbrella header "Pods-SimpleMemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
