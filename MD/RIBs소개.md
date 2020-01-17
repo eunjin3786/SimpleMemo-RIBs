@@ -62,3 +62,7 @@ Active, InActive 두가지 상태중 하나이다.
 ## 4.2 Rx stream을 통해 소통하는 방법 
 자식 RIB의 build method에 파라미터를 추가해서 부모 RIB의 스트림을 주입해준다. 같은 스트림을 구독하고 있으므로 아래의 사진과 같이 소통할 수 있다.  
 <img width="517" alt="스크린샷 2020-01-16 오후 10 14 49" src="https://user-images.githubusercontent.com/9502063/72528102-9e075600-38ad-11ea-9a44-ef25ea88c221.png">
+
+
+
+이 방법은 child RIB이 부모 RIB으로부터 dynamic data(계속 변하는)를 받아야할 때 주로 사용한다. 
