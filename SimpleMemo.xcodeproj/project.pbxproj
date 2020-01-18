@@ -49,7 +49,9 @@
 		C227CC7423CEDE3C00574AD0 /* MemosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC6F23CEDE3C00574AD0 /* MemosInteractor.swift */; };
 		C227CC7523CEDE3C00574AD0 /* MemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */; };
 		C227CC7623CEDE3C00574AD0 /* MemosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */; };
-		C28BFDBA23D1C513002C5E5C /* SimpleMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDB923D1C513002C5E5C /* SimpleMemoTests.swift */; };
+		C28BFDC723D2900C002C5E5C /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC523D2900C002C5E5C /* RootInteractorTests.swift */; };
+		C28BFDC823D2900C002C5E5C /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC623D2900C002C5E5C /* RootRouterTests.swift */; };
+		C28BFDCA23D29148002C5E5C /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC923D29148002C5E5C /* Mocks.swift */; };
 		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
@@ -115,8 +117,10 @@
 		C227CC7023CEDE3C00574AD0 /* MemosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemosViewController.swift; sourceTree = "<group>"; };
 		C227CC7123CEDE3C00574AD0 /* MemosViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemosViewController.storyboard; sourceTree = "<group>"; };
 		C28BFDB723D1C513002C5E5C /* SimpleMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C28BFDB923D1C513002C5E5C /* SimpleMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMemoTests.swift; sourceTree = "<group>"; };
 		C28BFDBB23D1C513002C5E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28BFDC523D2900C002C5E5C /* RootInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
+		C28BFDC623D2900C002C5E5C /* RootRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
+		C28BFDC923D29148002C5E5C /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,10 +341,28 @@
 		C28BFDB823D1C513002C5E5C /* SimpleMemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				C28BFDB923D1C513002C5E5C /* SimpleMemoTests.swift */,
+				C28BFDC323D28F56002C5E5C /* RIBs */,
+				C28BFDC923D29148002C5E5C /* Mocks.swift */,
 				C28BFDBB23D1C513002C5E5C /* Info.plist */,
 			);
 			path = SimpleMemoTests;
+			sourceTree = "<group>";
+		};
+		C28BFDC323D28F56002C5E5C /* RIBs */ = {
+			isa = PBXGroup;
+			children = (
+				C28BFDC423D28F67002C5E5C /* Root */,
+			);
+			path = RIBs;
+			sourceTree = "<group>";
+		};
+		C28BFDC423D28F67002C5E5C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C28BFDC523D2900C002C5E5C /* RootInteractorTests.swift */,
+				C28BFDC623D2900C002C5E5C /* RootRouterTests.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,7 +593,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28BFDBA23D1C513002C5E5C /* SimpleMemoTests.swift in Sources */,
+				C28BFDC823D2900C002C5E5C /* RootRouterTests.swift in Sources */,
+				C28BFDC723D2900C002C5E5C /* RootInteractorTests.swift in Sources */,
+				C28BFDCA23D29148002C5E5C /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
