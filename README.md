@@ -54,4 +54,4 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 ### Unit Test
 | Number |                            Title                             | Memo |
 | :----: | :----------------------------------------------------------: | :--: |
-|   1    | [RootRouterTests](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/1.%20setup%20Root%20RIB.md) |      |
+|   1    | [RootRouterTests](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/RootRouterTests.md) |      |
