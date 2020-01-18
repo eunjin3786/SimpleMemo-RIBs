@@ -25,8 +25,9 @@ final class MemosViewController: UIViewController, MemosPresentable {
 
     weak var listener: MemosPresentableListener?
     private let disposeBag = DisposeBag()
-    
-    static func instantiate() -> Self {
+
+    static func instantiate(with email: String) -> Self {
+        print(email)
         return Storyboard.MemosViewController.instantiate(self)
     }
 

@@ -37,7 +37,7 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
     
     func route() {
         if FirebaseManager.isLogin {
-            routeToLoggedInRIB()
+            routeToLoggedInRIB(email: FirebaseManager.userEmail)
         } else {
             routeToLoggedOutRIB()
         }
@@ -56,7 +56,7 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         viewController.present(viewController: navigationController)
     }
     
-    func routeToLoggedInRIB() {
+    func routeToLoggedInRIB(email: String) {
         if let loggedOutRouting = loggedOutRouting {
             detachChild(loggedOutRouting)
             if let navigationController = loggedOutRouting.viewControllable.uiviewController.navigationController {
@@ -67,7 +67,8 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
             self.loggedOutRouting = nil
         }
         
-        let loggedInRouting = loggedInBuilder.build(withListener: interactor)
+        let loggedInRouting = loggedInBuilder.build(withListener: interactor,
+                                                    email: email)
         self.loggedInRouting = loggedInRouting
         attachChild(loggedInRouting)
     }

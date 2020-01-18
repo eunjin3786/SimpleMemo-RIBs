@@ -8,8 +8,13 @@ class FirebaseManager {
         return Auth.auth().currentUser != nil ? true : false
     }
     
+    // identifier for DB
     class var user: String {
         return Auth.auth().currentUser?.email?.removeSpecialCharacters() ?? ""
+    }
+    
+    class var userEmail: String {
+        return Auth.auth().currentUser?.email ?? ""
     }
     
     class func add(memo: Memo) {

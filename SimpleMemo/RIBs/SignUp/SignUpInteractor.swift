@@ -13,7 +13,7 @@ protocol SignUpPresentable: Presentable {
 protocol SignUpListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
     func navigationBack()
-    func signupAndLoginDidSuccess()
+    func signupAndLoginDidSuccess(email: String)
 }
 
 final class SignUpInteractor: PresentableInteractor<SignUpPresentable>, SignUpInteractable, SignUpPresentableListener {
@@ -47,7 +47,7 @@ final class SignUpInteractor: PresentableInteractor<SignUpPresentable>, SignUpIn
             switch result {
             case .success:
                 Navigator.presentAlert(with: "회원가입 완료", action: { _ in
-                    self?.listener?.signupAndLoginDidSuccess()
+                    self?.listener?.signupAndLoginDidSuccess(email: email)
                 })
             case .failure(let error):
                 Navigator.presentAlert(with: error.localizedDescription)
