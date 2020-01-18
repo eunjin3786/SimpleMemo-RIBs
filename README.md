@@ -50,3 +50,8 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 |   8    | [LoggedOutViewController에도 네비게이션 달기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/8.%20LoggedOutViewController에도%20네비게이션%20달기.md) |      |
 |   9    | LoggedOutViewController에 회원가입 버튼 달기 |    - 적으면서 안하고 바로 작업해서 문서가 없음  |
 
+
+### Unit Test
+| Number |                            Title                             | Memo |
+| :----: | :----------------------------------------------------------: | :--: |
+|   1    | [RootRouterTests](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/1.%20setup%20Root%20RIB.md) |      |
