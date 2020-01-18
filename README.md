@@ -49,6 +49,9 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 |   7    | [MemosViewController에 로그아웃 버튼 달기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/7.%20MemosViewController에%20로그아웃%20버튼%20달기.md) |      |
 |   8    | [LoggedOutViewController에도 네비게이션 달기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/8.%20LoggedOutViewController에도%20네비게이션%20달기.md) |      |
 |   9    | LoggedOutViewController에 회원가입 버튼 달기 |    - 적으면서 안하고 바로 작업해서 문서가 없음  |
+|   10    | [email을 MemosRIB에게 까지 주입해주기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/9.%20email을%20MemosRIB에게%20까지%20주입해주기.md) |    - [의존성 트리 포스팅](https://eunjin3786.tistory.com/116)에서 데이터 주입을 보여주기 위해 작성한 예제  |
+
+
 
 
 ### Unit Test
