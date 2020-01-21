@@ -92,5 +92,6 @@ install-xcode-template.sh 을 run하면 Xcode에서 RIB 템플릿이 생기는�
 그리고 부모-자식 관계 의존성, 데이터 간의 의존성에 대해서 나눠서 관리하게 해주는 것도 굉장히 좋다고 생각이 들었다. 
 
 
+## 우버가 말하는 장점
 
-
+<img width="811" alt="스크린샷 2020-01-21 오전 1 55 43" src="https://user-images.githubusercontent.com/9502063/72785249-2438e900-3c6e-11ea-8b3a-8f0944968d1e.png">
