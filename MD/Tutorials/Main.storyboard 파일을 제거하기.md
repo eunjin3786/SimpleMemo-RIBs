@@ -75,3 +75,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 2. App Icons and Launch Images > Launch Screen에 LaunchScreen이라고 되어있는 것을 아래와 같이 지워주세요.
 
 <img width="767" alt="스크린샷 2020-01-24 오후 4 57 54" src="https://user-images.githubusercontent.com/9502063/73053485-34013900-3ecb-11ea-8965-dff1ad149552.png">
+
+==> LaunchScreen을 지우니 화면이 작게 나오는데 찾아봐야겠음...!!
