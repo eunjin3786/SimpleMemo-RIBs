@@ -60,7 +60,8 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 |   1    | [RootRouterTests](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/RootRouterTests.md) |      |
 
 
-### 추가
+### 🍯 꿀팁 🍯
 | Number |                            Title                             | Memo |
 | :----: | :----------------------------------------------------------: | :--: |
 |   1    | [Main.storyboard 파일을 제거하기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/Main.storyboard%20파일을%20제거하기.md) |      |
+|   2    | [storyboard 파일을 만들 때](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/Main.storyboard%20파일을%20제거하기.md) |      |
