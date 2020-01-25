@@ -65,5 +65,5 @@ SimpleMemo프로젝트를 RIBs로 바꾸면서 작성한 튜토리얼입니다.
 | :----: | :----------------------------------------------------------: | :--: |
 |   1    | [Main.storyboard 파일을 제거하기](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/Main.storyboard%20파일을%20제거하기.md) |      |
 |   2    | [storyboard 파일을 만들 때](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/storyboard%20파일을%20만들%20때.md) |      |
-|   3    | [NavigationController를 쓰고 싶을때](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/storyboard%20파일을%20만들%20때.md) |      |
-|   4    | [기본 modal style이나 navigation pop을 쓸때 꼭 챙겨야할 것](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/storyboard%20파일을%20만들%20때.md) |      |
+|   3    | [NavigationController를 쓰고 싶을때](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/NavigationController를%20쓰고%20싶을때.md) |      |
+|   4    | [기본 modal style이나 navigation pop을 쓸때 꼭 챙겨야할 것](https://github.com/eunjin3786/SimpleMemo-RIBs/blob/feature/RIBs/MD/Tutorials/기본%20modal%20style이나%20navigation%20pop을%20쓸%20때%20꼭%20챙겨야할%20것.md) |      |
