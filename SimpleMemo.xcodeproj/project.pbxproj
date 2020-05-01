@@ -271,17 +271,16 @@
 		AC7E1F01229A72A4001180C3 /* SimpleMemo */ = {
 			isa = PBXGroup;
 			children = (
+				ACB368F9245C28C00040817A /* Resource */,
 				AC3F04D223C4ED7C005ED8E6 /* App */,
 				AC3F04D023C4ED32005ED8E6 /* RIBs */,
 				AC3413B622AEA1850090487B /* Extension */,
 				AC3F052623C9775F005ED8E6 /* Environment */,
 				ACC0ACDD22A138E90017BBB8 /* Navigation */,
 				AC3F04CC23C4C481005ED8E6 /* Utils */,
-				AC7E1F09229A72A7001180C3 /* Assets.xcassets */,
-				AC3F052923CA0004005ED8E6 /* Color.xcassets */,
+				AC7E1F18229A8002001180C3 /* Model */,
 				AC7E1F0B229A72A7001180C3 /* LaunchScreen.storyboard */,
 				AC503E7D23CF5C7700FA1EC2 /* Main.storyboard */,
-				AC7E1F18229A8002001180C3 /* Model */,
 				AC7E1F0E229A72A7001180C3 /* Info.plist */,
 				AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */,
 			);
@@ -294,6 +293,15 @@
 				AC7E1F20229A815C001180C3 /* Memo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ACB368F9245C28C00040817A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AC7E1F09229A72A7001180C3 /* Assets.xcassets */,
+				AC3F052923CA0004005ED8E6 /* Color.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		ACC0ACDD22A138E90017BBB8 /* Navigation */ = {
