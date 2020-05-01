@@ -30,12 +30,12 @@ ex) viewController가 viewModel, reactor를 가지고 있다.
 
 그리고 Ride라는 RIB이 추가되어서 현재 RideRIB이라면 
 
-<img width="694" alt="스크린샷 2020-01-16 오후 10 36 50" src="https://user-images.githubusercontent.com/9502063/72529447-b2008700-38b0-11ea-8e84-a3e1e3a473f7.png">
-
+<img width="829" alt="스크린샷 2020-01-16 오후 10 36 29" src="https://user-images.githubusercontent.com/9502063/72529416-a4e39800-38b0-11ea-9bcb-28198b0377d5.png">
 
 ride 상태라는 것이 보장되기 때문에 아래와 같은 if문이 빠지고 
 
-<img width="829" alt="스크린샷 2020-01-16 오후 10 36 29" src="https://user-images.githubusercontent.com/9502063/72529416-a4e39800-38b0-11ea-9bcb-28198b0377d5.png">
+<img width="694" alt="스크린샷 2020-01-16 오후 10 36 50" src="https://user-images.githubusercontent.com/9502063/72529447-b2008700-38b0-11ea-8e84-a3e1e3a473f7.png">
+
 
 이런 코드가 나올 수 있게 되는 것이다. 
 
