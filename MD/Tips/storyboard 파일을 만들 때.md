@@ -48,7 +48,7 @@ final class MainBuilder: Builder<MainDependency>, MainBuildable {
 ```
 
 
-## 2.1 instantiateInitialViewController 를 이용해 create 함수 만들기 
+## 2.1 instantiateInitialViewController() 를 이용해 create 함수 만들기 
 
 ```swift
 final class MainViewController: UIViewController, MainPresentable, MainViewControllable {
@@ -61,7 +61,7 @@ final class MainViewController: UIViewController, MainPresentable, MainViewContr
 }
 ```
 
-## 2.2 instantiateInitialViewController 를 이용해 create 함수 만들기 
+## 2.2 instantiateViewController(identifier:) 를 이용해 create 함수 만들기 
 
 우선 MainViewController.storyboard에 있는 MainViewController에 가서 Storyboard ID 설정을 해줍니다. 
 
