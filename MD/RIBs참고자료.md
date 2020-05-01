@@ -10,7 +10,7 @@
 
 - [Multiplatform architecture ribs in swift](https://www.slideshare.net/NaverEngineering/multiplatform-architecture-ri-bs-in-swift) 타다 - 김남현님
 - [RxRIBs: Multiplatform architecture with Rx](https://speakerdeck.com/vcnc/rxribs-multiplatform-architecture-with-rx)  타다 - 김남현님  
-- [MVC, MVVM, ReactorKit, VIPER를 거쳐 RIB 정착기](https://speakerdeck.com/vcnc/rxribs-multiplatform-architecture-with-rx) 카카오뱅크 - 민소네님
+- [MVC, MVVM, ReactorKit, VIPER를 거쳐 RIB 정착기](https://www.slideshare.net/MinM9510/mvc-mvvm-reactorkit-viper-rib-192788847) 카카오뱅크 - 민소네님
 
 
 
@@ -18,8 +18,7 @@
 
 - [[Uber Mobility] RIB (Router Interactor Builder) - Yi Wang](https://www.youtube.com/watch?v=Q5cTT0M0YXg )  (우버는 무려 500개의 RIB을 가지고 있다고 한다)
 - [RxRIBs, Multiplatform architecture with Rx - 김남현](https://www.youtube.com/watch?v=BvPW-cd8mpw&index=6&list=PLAHa1zfLtLiNPl0RVd6WX6W_aa678RAmS)
-
-
+- [MVC, MVVM, ReactorKit, VIPER를 거쳐 RIB 정착기 - 민소네](https://www.youtube.com/watch?v=3XS6xLzKRjc)
 
 ## 블로그
 
