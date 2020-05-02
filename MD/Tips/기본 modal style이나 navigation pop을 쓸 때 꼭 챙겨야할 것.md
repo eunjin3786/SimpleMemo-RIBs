@@ -1,4 +1,4 @@
-#  1. 기본 Modal Style로 present 했다면  
+##  1. 기본 Modal Style로 present 했다면  
 
 <img width="360" alt="스크린샷 2020-01-25 오후 9 44 10" src="https://user-images.githubusercontent.com/9502063/73121299-0c3dce00-3fbc-11ea-9b4c-40c1d1f096eb.png">
 
