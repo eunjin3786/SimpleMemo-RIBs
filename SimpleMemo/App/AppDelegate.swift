@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     private var launchRouter: LaunchRouting?
+    private var ribTreeViewer: RIBTreeViewer?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.launchRouter = launchRouter
         launchRouter.launch(from: window)
 
+        #if DEBUG
+        ribTreeViewer = RIBTreeViewer(rootRouter: launchRouter)
+        ribTreeViewer?.startObserveTree()
+        #endif
+        
         return true
     }
 

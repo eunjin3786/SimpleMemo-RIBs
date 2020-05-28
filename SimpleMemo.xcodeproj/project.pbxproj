@@ -53,6 +53,7 @@
 		C28BFDC823D2900C002C5E5C /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC623D2900C002C5E5C /* RootRouterTests.swift */; };
 		C28BFDCA23D29148002C5E5C /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28BFDC923D29148002C5E5C /* Mocks.swift */; };
 		C2AECB6722C74B5400BB6EEE /* LoginTextInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */; };
+		C2B7D691247FAFC50026116F /* RIBTreeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */; };
 		FD4E73BD40815A7269FBD24B /* Pods_SimpleMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		C28BFDC623D2900C002C5E5C /* RootRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
 		C28BFDC923D29148002C5E5C /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		C2AECB6622C74B5400BB6EEE /* LoginTextInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextInputManager.swift; sourceTree = "<group>"; };
+		C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIBTreeViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		AC3F04D023C4ED32005ED8E6 /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				C2B7D690247FAFC50026116F /* RIBTreeViewer.swift */,
 				AC3F04D123C4ED50005ED8E6 /* Root */,
 				AC3F04E523C77293005ED8E6 /* LoggedOut */,
 				AC503E7223CF520D00FA1EC2 /* SignUp */,
@@ -580,6 +583,7 @@
 				AC503E7B23CF522300FA1EC2 /* SignUpInteractor.swift in Sources */,
 				ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */,
 				AC3F04E223C4F455005ED8E6 /* RootViewController.swift in Sources */,
+				C2B7D691247FAFC50026116F /* RIBTreeViewer.swift in Sources */,
 				AC503E7823CF522300FA1EC2 /* SignUpRouter.swift in Sources */,
 				AC3F052823C97781005ED8E6 /* Storyboard.swift in Sources */,
 				C227CC6923CEDE1A00574AD0 /* AddMemoRouter.swift in Sources */,
