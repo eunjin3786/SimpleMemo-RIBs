@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.launchRouter = launchRouter
         launchRouter.launch(from: window)
 
+        launchRouter.log()
+        
+        
         #if DEBUG
         ribTreeViewer = RIBTreeViewer(rootRouter: launchRouter)
         ribTreeViewer?.startObserveTree()
