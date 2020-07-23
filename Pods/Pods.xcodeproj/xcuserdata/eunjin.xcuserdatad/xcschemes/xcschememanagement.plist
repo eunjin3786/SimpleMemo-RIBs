@@ -3,128 +3,114 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
+	<dict/>
+	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>Firebase.xcscheme</key>
+		<key>0251F7DE52236EE28AD8CAF8104BFBC9</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>FirebaseAnalytics.xcscheme</key>
+		<key>072CEA044D2EF26F03496D5996BBF59F</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>FirebaseAuth.xcscheme</key>
+		<key>37D20E5988CC9EF0C7C6A7B6FED9A53D</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>FirebaseAuthInterop.xcscheme</key>
+		<key>4402AFF83DBDC4DD07E198685FDC2DF2</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>FirebaseCore.xcscheme</key>
+		<key>46B7783DEBE89FB0601BE44862299A74</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>FirebaseDatabase.xcscheme</key>
+		<key>505E08ECADF3429E301747D2A3A1C052</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>FirebaseInstanceID.xcscheme</key>
+		<key>6AE4A3D573DED275B034E20506596C62</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>GTMSessionFetcher.xcscheme</key>
+		<key>736AF68F6527ACF6B4A4C54728824A1C</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>GoogleAppMeasurement.xcscheme</key>
+		<key>7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>GoogleUtilities.xcscheme</key>
+		<key>8D7F5D5DD528D21A72DC87ADA5B12E2D</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>Pods-SimpleMemo.xcscheme</key>
+		<key>8EC0F2618965C875A96BFDBEE5D9734C</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>RIBs.xcscheme</key>
+		<key>9307B7A119490930CF70393AB529AAC1</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>RxAtomic.xcscheme</key>
+		<key>9343E67389BF85B11D503E842D66BAED</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>RxCocoa.xcscheme</key>
+		<key>9E25537BF40D1A3B30CF43FD3E6ACD94</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>RxSwift.xcscheme</key>
+		<key>9F5E9BD410CB4F1DEC492A5EA772F6C4</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>leveldb-library.xcscheme</key>
+		<key>B53D977A951AFC38B21751B706C1DF83</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
-		<key>nanopb.xcscheme</key>
+		<key>B8189B1E47CF393C4E6452E2E5066600</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C49E7A4D59E5C8BE8DE9FB1EFB150185</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC7FAB18997ABFFF0DBF48B654D78A69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2B5E7DCCBBFB32341D857D01211A1A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D676E21115185671D7258A56944ABE98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict/>
 </dict>
 </plist>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1200"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9307B7A119490930CF70393AB529AAC1"
-               BuildableName = "leveldb.framework"
-               BlueprintName = "leveldb-library"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "AC7E1EFE229A72A4001180C3"
+               BuildableName = "SimpleMemo.app"
+               BlueprintName = "SimpleMemo"
+               ReferencedContainer = "container:SimpleMemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C28BFDB623D1C513002C5E5C"
+               BuildableName = "SimpleMemoTests.xctest"
+               BlueprintName = "SimpleMemoTests"
+               ReferencedContainer = "container:SimpleMemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -40,6 +50,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC7E1EFE229A72A4001180C3"
+            BuildableName = "SimpleMemo.app"
+            BlueprintName = "SimpleMemo"
+            ReferencedContainer = "container:SimpleMemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +67,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC7E1EFE229A72A4001180C3"
+            BuildableName = "SimpleMemo.app"
+            BlueprintName = "SimpleMemo"
+            ReferencedContainer = "container:SimpleMemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

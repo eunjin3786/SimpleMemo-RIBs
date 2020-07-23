@@ -7,7 +7,30 @@
 		<key>SimpleMemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>17</integer>
+		</dict>
+		<key>SimpleMemoWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AC389D2B24C9D4FF0040E7B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC7E1EFE229A72A4001180C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C28BFDB623D1C513002C5E5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

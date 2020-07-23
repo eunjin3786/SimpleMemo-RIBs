@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2A2A2231754F70F31C3FB8AE /* Pods_SimpleMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6F09E78BAEC6FA1DC33054 /* Pods_SimpleMemoTests.framework */; };
 		AC3413B822AEA1B40090487B /* String+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */; };
+		AC389D2E24C9D4FF0040E7B5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC389D2D24C9D4FF0040E7B5 /* WidgetKit.framework */; };
+		AC389D3024C9D4FF0040E7B5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC389D2F24C9D4FF0040E7B5 /* SwiftUI.framework */; };
+		AC389D3324C9D4FF0040E7B5 /* SimpleMemoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC389D3224C9D4FF0040E7B5 /* SimpleMemoWidgetBundle.swift */; };
+		AC389D3524C9D5010040E7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC389D3424C9D5010040E7B5 /* Assets.xcassets */; };
+		AC389D3924C9D5010040E7B5 /* SimpleMemoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC389D2C24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AC3F04CB23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */; };
 		AC3F04D423C4ED96005ED8E6 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */; };
 		AC3F04E123C4F455005ED8E6 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F04DD23C4F455005ED8E6 /* RootRouter.swift */; };
@@ -33,6 +38,17 @@
 		AC7E1F0D229A72A7001180C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F0B229A72A7001180C3 /* LaunchScreen.storyboard */; };
 		AC7E1F21229A815C001180C3 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F20229A815C001180C3 /* Memo.swift */; };
 		AC7E1F24229C2D00001180C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */; };
+		ACB95DBC24C9D6B80019CF04 /* MemoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DBB24C9D6B80019CF04 /* MemoProvider.swift */; };
+		ACB95DBE24C9D6C80019CF04 /* MemoListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DBD24C9D6C80019CF04 /* MemoListProvider.swift */; };
+		ACB95DC024C9D6EB0019CF04 /* MemoListWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DBF24C9D6EB0019CF04 /* MemoListWidget.swift */; };
+		ACB95DC224C9D6F60019CF04 /* MemoListEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DC124C9D6F60019CF04 /* MemoListEntryView.swift */; };
+		ACB95DC424C9D7050019CF04 /* MemoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DC324C9D7050019CF04 /* MemoWidget.swift */; };
+		ACB95DC624C9D7120019CF04 /* MemoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DC524C9D7120019CF04 /* MemoEntryView.swift */; };
+		ACB95DC824C9D7240019CF04 /* MemoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DC724C9D7240019CF04 /* MemoEntry.swift */; };
+		ACB95DCA24C9D7310019CF04 /* MemoListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DC924C9D7310019CF04 /* MemoListEntry.swift */; };
+		ACB95DCB24C9D7EB0019CF04 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E1F20229A815C001180C3 /* Memo.swift */; };
+		ACB95DD024C9DA000019CF04 /* MemosPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DCF24C9DA000019CF04 /* MemosPlaceholderView.swift */; };
+		ACB95DD224C9DA160019CF04 /* MemoPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB95DD124C9DA160019CF04 /* MemoPlaceholderView.swift */; };
 		ACC0ACD1229C3AE90017BBB8 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */; };
 		ACC0ACDF22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */; };
 		ACC0ACE122A1406B0017BBB8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0ACE022A1406B0017BBB8 /* Navigator.swift */; };
@@ -58,6 +74,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC389D3724C9D5010040E7B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC7E1EF7229A72A3001180C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC389D2B24C9D4FF0040E7B5;
+			remoteInfo = SimpleMemoWidgetExtension;
+		};
 		C28BFDBC23D1C513002C5E5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC7E1EF7229A72A3001180C3 /* Project object */;
@@ -67,6 +90,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC389D3A24C9D5010040E7B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC389D3924C9D5010040E7B5 /* SimpleMemoWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08CEA3B5CCC62DBE7374C673 /* Pods-SimpleMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemoTests/Pods-SimpleMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		0A6F09E78BAEC6FA1DC33054 /* Pods_SimpleMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +112,12 @@
 		4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.release.xcconfig"; sourceTree = "<group>"; };
 		5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleMemo/Pods-SimpleMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3413B722AEA1B40090487B /* String+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SimpleMemo.swift"; sourceTree = "<group>"; };
+		AC389D2C24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleMemoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC389D2D24C9D4FF0040E7B5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AC389D2F24C9D4FF0040E7B5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		AC389D3224C9D4FF0040E7B5 /* SimpleMemoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMemoWidgetBundle.swift; sourceTree = "<group>"; };
+		AC389D3424C9D5010040E7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC389D3624C9D5010040E7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+SimpleMemo.swift"; sourceTree = "<group>"; };
 		AC3F04D323C4ED96005ED8E6 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		AC3F04DD23C4F455005ED8E6 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -101,6 +144,16 @@
 		AC7E1F0E229A72A7001180C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC7E1F20229A815C001180C3 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		AC7E1F23229C2D00001180C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACB95DBB24C9D6B80019CF04 /* MemoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoProvider.swift; sourceTree = "<group>"; };
+		ACB95DBD24C9D6C80019CF04 /* MemoListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListProvider.swift; sourceTree = "<group>"; };
+		ACB95DBF24C9D6EB0019CF04 /* MemoListWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListWidget.swift; sourceTree = "<group>"; };
+		ACB95DC124C9D6F60019CF04 /* MemoListEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListEntryView.swift; sourceTree = "<group>"; };
+		ACB95DC324C9D7050019CF04 /* MemoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWidget.swift; sourceTree = "<group>"; };
+		ACB95DC524C9D7120019CF04 /* MemoEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEntryView.swift; sourceTree = "<group>"; };
+		ACB95DC724C9D7240019CF04 /* MemoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEntry.swift; sourceTree = "<group>"; };
+		ACB95DC924C9D7310019CF04 /* MemoListEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListEntry.swift; sourceTree = "<group>"; };
+		ACB95DCF24C9DA000019CF04 /* MemosPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosPlaceholderView.swift; sourceTree = "<group>"; };
+		ACB95DD124C9DA160019CF04 /* MemoPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoPlaceholderView.swift; sourceTree = "<group>"; };
 		ACC0ACD0229C3AE90017BBB8 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		ACC0ACDE22A1391E0017BBB8 /* UIApplication+SimpleMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SimpleMemo.swift"; sourceTree = "<group>"; };
 		ACC0ACE022A1406B0017BBB8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
@@ -127,6 +180,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC389D2924C9D4FF0040E7B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC389D3024C9D4FF0040E7B5 /* SwiftUI.framework in Frameworks */,
+				AC389D2E24C9D4FF0040E7B5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC7E1EFC229A72A4001180C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +213,8 @@
 			children = (
 				15546FFE30DB6CAA85C4C58B /* Pods_SimpleMemo.framework */,
 				0A6F09E78BAEC6FA1DC33054 /* Pods_SimpleMemoTests.framework */,
+				AC389D2D24C9D4FF0040E7B5 /* WidgetKit.framework */,
+				AC389D2F24C9D4FF0040E7B5 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,6 +238,18 @@
 				AC3F04CA23C4C2B3005ED8E6 /* UINavigationController+SimpleMemo.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AC389D3124C9D4FF0040E7B5 /* SimpleMemoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AC389D3224C9D4FF0040E7B5 /* SimpleMemoWidgetBundle.swift */,
+				ACB95DB524C9D65A0019CF04 /* Memo */,
+				ACB95DB624C9D6620019CF04 /* MemoList */,
+				AC389D3424C9D5010040E7B5 /* Assets.xcassets */,
+				AC389D3624C9D5010040E7B5 /* Info.plist */,
+			);
+			path = SimpleMemoWidget;
 			sourceTree = "<group>";
 		};
 		AC3F04CC23C4C481005ED8E6 /* Utils */ = {
@@ -256,6 +332,7 @@
 			children = (
 				AC7E1F01229A72A4001180C3 /* SimpleMemo */,
 				C28BFDB823D1C513002C5E5C /* SimpleMemoTests */,
+				AC389D3124C9D4FF0040E7B5 /* SimpleMemoWidget */,
 				AC7E1F00229A72A4001180C3 /* Products */,
 				7D7C844DD5759FD6E90AE5AF /* Pods */,
 				11A3A1CF1719C005CA3518BC /* Frameworks */,
@@ -267,6 +344,7 @@
 			children = (
 				AC7E1EFF229A72A4001180C3 /* SimpleMemo.app */,
 				C28BFDB723D1C513002C5E5C /* SimpleMemoTests.xctest */,
+				AC389D2C24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,6 +383,62 @@
 				AC3F052923CA0004005ED8E6 /* Color.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		ACB95DB524C9D65A0019CF04 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				ACB95DB724C9D6710019CF04 /* Provider */,
+				ACB95DB924C9D67F0019CF04 /* View */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		ACB95DB624C9D6620019CF04 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				ACB95DB824C9D6770019CF04 /* Provider */,
+				ACB95DBA24C9D6850019CF04 /* View */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		ACB95DB724C9D6710019CF04 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				ACB95DC724C9D7240019CF04 /* MemoEntry.swift */,
+				ACB95DBB24C9D6B80019CF04 /* MemoProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		ACB95DB824C9D6770019CF04 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				ACB95DC924C9D7310019CF04 /* MemoListEntry.swift */,
+				ACB95DBD24C9D6C80019CF04 /* MemoListProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		ACB95DB924C9D67F0019CF04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB95DC324C9D7050019CF04 /* MemoWidget.swift */,
+				ACB95DC524C9D7120019CF04 /* MemoEntryView.swift */,
+				ACB95DD124C9DA160019CF04 /* MemoPlaceholderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACB95DBA24C9D6850019CF04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB95DBF24C9D6EB0019CF04 /* MemoListWidget.swift */,
+				ACB95DC124C9D6F60019CF04 /* MemoListEntryView.swift */,
+				ACB95DCF24C9DA000019CF04 /* MemosPlaceholderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ACC0ACDD22A138E90017BBB8 /* Navigation */ = {
@@ -379,6 +513,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC389D2B24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC389D3D24C9D5010040E7B5 /* Build configuration list for PBXNativeTarget "SimpleMemoWidgetExtension" */;
+			buildPhases = (
+				AC389D2824C9D4FF0040E7B5 /* Sources */,
+				AC389D2924C9D4FF0040E7B5 /* Frameworks */,
+				AC389D2A24C9D4FF0040E7B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleMemoWidgetExtension;
+			productName = SimpleMemoWidgetExtension;
+			productReference = AC389D2C24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AC7E1EFE229A72A4001180C3 /* SimpleMemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC7E1F11229A72A7001180C3 /* Build configuration list for PBXNativeTarget "SimpleMemo" */;
@@ -388,10 +539,12 @@
 				AC7E1EFC229A72A4001180C3 /* Frameworks */,
 				AC7E1EFD229A72A4001180C3 /* Resources */,
 				4DC5714EC7AC5CE864D00182 /* [CP] Embed Pods Frameworks */,
+				AC389D3A24C9D5010040E7B5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC389D3824C9D5010040E7B5 /* PBXTargetDependency */,
 			);
 			name = SimpleMemo;
 			productName = SimpleMemo;
@@ -424,10 +577,13 @@
 		AC7E1EF7229A72A3001180C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = eunjin;
 				TargetAttributes = {
+					AC389D2B24C9D4FF0040E7B5 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					AC7E1EFE229A72A4001180C3 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -452,11 +608,20 @@
 			targets = (
 				AC7E1EFE229A72A4001180C3 /* SimpleMemo */,
 				C28BFDB623D1C513002C5E5C /* SimpleMemoTests */,
+				AC389D2B24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC389D2A24C9D4FF0040E7B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC389D3524C9D5010040E7B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC7E1EFD229A72A4001180C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -560,6 +725,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC389D2824C9D4FF0040E7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB95DD024C9DA000019CF04 /* MemosPlaceholderView.swift in Sources */,
+				ACB95DC624C9D7120019CF04 /* MemoEntryView.swift in Sources */,
+				ACB95DBE24C9D6C80019CF04 /* MemoListProvider.swift in Sources */,
+				ACB95DC824C9D7240019CF04 /* MemoEntry.swift in Sources */,
+				ACB95DC424C9D7050019CF04 /* MemoWidget.swift in Sources */,
+				ACB95DC024C9D6EB0019CF04 /* MemoListWidget.swift in Sources */,
+				ACB95DBC24C9D6B80019CF04 /* MemoProvider.swift in Sources */,
+				ACB95DCA24C9D7310019CF04 /* MemoListEntry.swift in Sources */,
+				ACB95DD224C9DA160019CF04 /* MemoPlaceholderView.swift in Sources */,
+				ACB95DC224C9D6F60019CF04 /* MemoListEntryView.swift in Sources */,
+				AC389D3324C9D4FF0040E7B5 /* SimpleMemoWidgetBundle.swift in Sources */,
+				ACB95DCB24C9D7EB0019CF04 /* Memo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC7E1EFB229A72A4001180C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,6 +798,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC389D3824C9D5010040E7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC389D2B24C9D4FF0040E7B5 /* SimpleMemoWidgetExtension */;
+			targetProxy = AC389D3724C9D5010040E7B5 /* PBXContainerItemProxy */;
+		};
 		C28BFDBD23D1C513002C5E5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC7E1EFE229A72A4001180C3 /* SimpleMemo */;
@@ -633,6 +822,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AC389D3B24C9D5010040E7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4YL9RLK7;
+				INFOPLIST_FILE = SimpleMemoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunjin.SimpleMemo.SimpleMemoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC389D3C24C9D5010040E7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C4YL9RLK7;
+				INFOPLIST_FILE = SimpleMemoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eunjin.SimpleMemo.SimpleMemoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AC7E1F0F229A72A7001180C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -755,6 +990,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5081BF39B389A6BC44D8C656 /* Pods-SimpleMemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C4YL9RLK7;
@@ -792,6 +1028,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F561475DA26D4FA97485663 /* Pods-SimpleMemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C4YL9RLK7;
@@ -886,6 +1123,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC389D3D24C9D5010040E7B5 /* Build configuration list for PBXNativeTarget "SimpleMemoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC389D3B24C9D5010040E7B5 /* Debug */,
+				AC389D3C24C9D5010040E7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC7E1EFA229A72A4001180C3 /* Build configuration list for PBXProject "SimpleMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
